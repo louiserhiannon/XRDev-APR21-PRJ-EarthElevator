@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3146124437016729458}
   - component: {fileID: 9066167679049146246}
   - component: {fileID: 5669680856327957331}
+  - component: {fileID: 5659530984044440680}
   m_Layer: 0
   m_Name: Shaft5OuterCore
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7291255043954339952}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 16.44, y: -2.8, z: -6.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -853,3 +854,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &5659530984044440680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291255043954339952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f095b503b65aa2145afe80b2f0478c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTileX: 0.3
+  minTileX: 0.1
+  maxTileY: 0.3
+  minTileY: 0.1
+  flowSpeedX: 0.1
+  flowSpeedY: 0.1
+  flowOffset: 30
+  cosTime: 0
+  textureScaleX: 0
+  textureScaleY: 0
