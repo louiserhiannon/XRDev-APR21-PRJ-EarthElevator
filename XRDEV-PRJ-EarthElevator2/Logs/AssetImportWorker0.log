@@ -15,12 +15,12 @@ C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-Ea
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65021
+54206
 Successfully changed project path to: C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2
 C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.99 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 57.42 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.60 ms.
 Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2/Assets
@@ -35,29 +35,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.104606 seconds.
+Registered in 0.001444 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.68 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 51.30 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.961 seconds
+- Completed reload, in  1.505 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.249553 seconds.
+Registered in 0.003776 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 52.08 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -65,621 +75,40 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  3.574 seconds
+- Completed reload, in  1.216 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2861 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 135.4 MB.
-System memory in use after: 132.6 MB.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3016 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.4 MB.
+System memory in use after: 137.6 MB.
 
-Unloading 162 unused Assets to reduce memory usage. Loaded Objects now: 3242.
-Total: 4.211700 ms (FindLiveObjects: 0.552700 ms CreateObjectMapping: 0.229400 ms MarkObjects: 1.973900 ms  DeleteObjects: 1.435000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Prefabs/Shaft5OuterCore.prefab
-  artifactKey: Guid(ed750473bd3b4d4429d44570708136bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft5OuterCore.prefab using Guid(ed750473bd3b4d4429d44570708136bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf6d34ee0ef11482546426a097126cf') in 0.047787 seconds
-  Import took 0.052197 seconds .
+Unloading 168 unused Assets to reduce memory usage. Loaded Objects now: 3398.
+Total: 4.384600 ms (FindLiveObjects: 0.589600 ms CreateObjectMapping: 0.446500 ms MarkObjects: 2.136400 ms  DeleteObjects: 1.211400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 575.929557 seconds.
-  path: Assets/Materials/Button.mat
-  artifactKey: Guid(f21d789811d810040aed436ef9eb0be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Button.mat using Guid(f21d789811d810040aed436ef9eb0be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f008a611ee7befc3c2e02ec2f66e67c') in 0.171929 seconds
-  Import took 0.176731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 395.210861 seconds.
-  path: Assets/Animations/ButtonPress.anim
-  artifactKey: Guid(42be262b27d2d2646b44c9185838a6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/ButtonPress.anim using Guid(42be262b27d2d2646b44c9185838a6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259e3d14718487881add3d154c1f1a7c') in 0.008659 seconds
-  Import took 0.013213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000466 seconds.
-  path: Assets/Animations/ButtonPress.anim
-  artifactKey: Guid(42be262b27d2d2646b44c9185838a6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/ButtonPress.anim using Guid(42be262b27d2d2646b44c9185838a6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259e3d14718487881add3d154c1f1a7c') in 0.002259 seconds
-  Import took 0.006560 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.180648 seconds.
-  path: Assets/Animations/Destination1.controller
-  artifactKey: Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination1.controller using Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e071dd6690a45b92306dd888b9c6046') in 0.009368 seconds
-  Import took 0.013952 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 677.679616 seconds.
-  path: Assets/Animations/Destination1.controller
-  artifactKey: Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination1.controller using Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b17a874d18d59843d368fd6fe31be2e') in 0.003649 seconds
-  Import took 0.009037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002610 seconds.
-  path: Assets/Animations/Destination1.controller
-  artifactKey: Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination1.controller using Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b17a874d18d59843d368fd6fe31be2e') in 0.002866 seconds
-  Import took 0.007270 seconds .
+  path: Assets/Scripts/SpeedUI.cs
+  artifactKey: Guid(f2985607f18082641a361ffaa063667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SpeedUI.cs using Guid(f2985607f18082641a361ffaa063667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c413106e5c203d0eb1c1c756291701b6') in 0.024221 seconds
+  Import took 0.028613 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002739 seconds.
+Registered in 0.003202 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.990 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2756 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.2 MB.
-System memory in use after: 131.5 MB.
-
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 3323.
-Total: 3.738600 ms (FindLiveObjects: 0.386200 ms CreateObjectMapping: 0.153100 ms MarkObjects: 1.871400 ms  DeleteObjects: 1.326000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 104.351184 seconds.
-  path: Assets/Animations/ButtonPress.anim
-  artifactKey: Guid(42be262b27d2d2646b44c9185838a6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/ButtonPress.anim using Guid(42be262b27d2d2646b44c9185838a6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e174815164a906f96b0b1f651f29769c') in 0.021767 seconds
-  Import took 0.025963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.870917 seconds.
-  path: Assets/Animations/Destination1.controller
-  artifactKey: Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination1.controller using Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c725867ddf03f2d48859d1912aeccd9') in 0.004097 seconds
-  Import took 0.008998 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002678 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.873 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2756 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.3 MB.
-System memory in use after: 131.5 MB.
-
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 3326.
-Total: 3.440200 ms (FindLiveObjects: 0.268200 ms CreateObjectMapping: 0.124100 ms MarkObjects: 1.782100 ms  DeleteObjects: 1.265100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 87.292626 seconds.
-  path: Assets/Animations/Destination1.controller
-  artifactKey: Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination1.controller using Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8cf8dba15fdb3fe10c60576630a4982') in 0.021430 seconds
-  Import took 0.025250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 741.869012 seconds.
-  path: Assets/Scripts/ButtonAnimation.cs
-  artifactKey: Guid(7ef082dadc024f64ebb38c0b2fbd2a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ButtonAnimation.cs using Guid(7ef082dadc024f64ebb38c0b2fbd2a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4582159bd396f77c3549fdd394895d55') in 0.011019 seconds
-  Import took 0.015637 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002994 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.910 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2757 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.3 MB.
-System memory in use after: 131.5 MB.
-
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 3330.
-Total: 3.536300 ms (FindLiveObjects: 0.290200 ms CreateObjectMapping: 0.147400 ms MarkObjects: 1.839000 ms  DeleteObjects: 1.258300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.299879 seconds.
-  path: Assets/Scripts/SetDestinationDepth.cs
-  artifactKey: Guid(11c8fc6e6ae1fcb488f8d88865d92051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SetDestinationDepth.cs using Guid(11c8fc6e6ae1fcb488f8d88865d92051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a8a0fb621db09baed9ab2f6ad658c09') in 0.009208 seconds
-  Import took 0.013385 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003100 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.975 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2758 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.4 MB.
-System memory in use after: 131.6 MB.
-
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 3334.
-Total: 3.747400 ms (FindLiveObjects: 0.305600 ms CreateObjectMapping: 0.153600 ms MarkObjects: 1.920700 ms  DeleteObjects: 1.366300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002970 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.935 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2758 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.4 MB.
-System memory in use after: 131.6 MB.
-
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 3337.
-Total: 3.638900 ms (FindLiveObjects: 0.247300 ms CreateObjectMapping: 0.165400 ms MarkObjects: 1.975300 ms  DeleteObjects: 1.250100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 127.684138 seconds.
-  path: Assets/Scripts/ButtonAnimation.cs
-  artifactKey: Guid(7ef082dadc024f64ebb38c0b2fbd2a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ButtonAnimation.cs using Guid(7ef082dadc024f64ebb38c0b2fbd2a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7419bafdfcf0ba5444c22dde49450c99') in 0.005258 seconds
-  Import took 0.009033 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002984 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.935 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2758 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.4 MB.
-System memory in use after: 131.6 MB.
-
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 3340.
-Total: 3.972900 ms (FindLiveObjects: 0.297500 ms CreateObjectMapping: 0.133800 ms MarkObjects: 2.143000 ms  DeleteObjects: 1.397700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 270.404558 seconds.
-  path: Assets/Scripts/SetDestinationDepth.cs
-  artifactKey: Guid(11c8fc6e6ae1fcb488f8d88865d92051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SetDestinationDepth.cs using Guid(11c8fc6e6ae1fcb488f8d88865d92051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35617e5d5abf25213c72e1ededc01ccd') in 0.005297 seconds
-  Import took 0.009443 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.472873 seconds.
-  path: Assets/Animations/Destination1 1.controller
-  artifactKey: Guid(6794034c0ac6340459a8dc425c5dbd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination1 1.controller using Guid(6794034c0ac6340459a8dc425c5dbd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d78144c86df69b2d38c3f4b79ce356a') in 0.021700 seconds
-  Import took 0.025745 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.797618 seconds.
-  path: Assets/Animations/Destination1.controller
-  artifactKey: Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination1.controller using Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f60eacc4045a0fd134ef3aa50ed207') in 0.007649 seconds
-  Import took 0.011909 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.474074 seconds.
-  path: Assets/Animations/Destination2.controller
-  artifactKey: Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination2.controller using Guid(60773191d9439f94eb91f2e4b27c6b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d973fa1e55161644960b3920190f19') in 0.008728 seconds
-  Import took 0.013510 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.223560 seconds.
-  path: Assets/Animations/Destination2.controller
-  artifactKey: Guid(6794034c0ac6340459a8dc425c5dbd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination2.controller using Guid(6794034c0ac6340459a8dc425c5dbd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1356b948a3759bd91c3c2746a56267e') in 0.003471 seconds
-  Import took 0.007793 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.505450 seconds.
-  path: Assets/Animations/Destination2 1.controller
-  artifactKey: Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination2 1.controller using Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c53c1a8c0b5531b88f1f42f4d73a279') in 0.009239 seconds
-  Import took 0.014174 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Animations/Destination2 1.controller
-  artifactKey: Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination2 1.controller using Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c53c1a8c0b5531b88f1f42f4d73a279') in 0.003320 seconds
-  Import took 0.007295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.093764 seconds.
-  path: Assets/Animations/Destination2.controller
-  artifactKey: Guid(6794034c0ac6340459a8dc425c5dbd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination2.controller using Guid(6794034c0ac6340459a8dc425c5dbd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09bb2cca07c0461c3e25ff00ba15a74') in 0.003509 seconds
-  Import took 0.007704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003568 seconds.
-  path: Assets/Animations/Destination2.controller
-  artifactKey: Guid(6794034c0ac6340459a8dc425c5dbd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination2.controller using Guid(6794034c0ac6340459a8dc425c5dbd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09bb2cca07c0461c3e25ff00ba15a74') in 0.002798 seconds
-  Import took 0.007838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.912180 seconds.
-  path: Assets/Animations/Destination3.controller
-  artifactKey: Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination3.controller using Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4469f5616626beb313ef1a78b68ad45b') in 0.007547 seconds
-  Import took 0.012286 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.533369 seconds.
-  path: Assets/Animations/Destination3 1.controller
-  artifactKey: Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination3 1.controller using Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51eae2f465bf158dafad928fa51ec63') in 0.007431 seconds
-  Import took 0.013039 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000572 seconds.
-  path: Assets/Animations/Destination3 1.controller
-  artifactKey: Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination3 1.controller using Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51eae2f465bf158dafad928fa51ec63') in 0.002906 seconds
-  Import took 0.007423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.355082 seconds.
-  path: Assets/Animations/Destination4.controller
-  artifactKey: Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination4.controller using Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbdc2d59d10ef5113b12ed9882b05f1') in 0.008897 seconds
-  Import took 0.013383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.310632 seconds.
-  path: Assets/Animations/Destination4 1.controller
-  artifactKey: Guid(4ba29e43d4f3f9e488c6856ec1f766db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination4 1.controller using Guid(4ba29e43d4f3f9e488c6856ec1f766db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcce06026fa74182413cbb99e6cb2426') in 0.008310 seconds
-  Import took 0.012783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.704190 seconds.
-  path: Assets/Animations/Destination5.controller
-  artifactKey: Guid(4ba29e43d4f3f9e488c6856ec1f766db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination5.controller using Guid(4ba29e43d4f3f9e488c6856ec1f766db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa21777dc087ac94c9e05edd830eff4') in 0.008717 seconds
-  Import took 0.012894 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.476998 seconds.
-  path: Assets/Animations/Destination4.controller
-  artifactKey: Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination4.controller using Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40281d53b0dd0b6a7dc20892849beead') in 0.003074 seconds
-  Import took 0.007915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/Animations/Destination4.controller
-  artifactKey: Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination4.controller using Guid(e152ce8e093debc48b3d4d236b0ec6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40281d53b0dd0b6a7dc20892849beead') in 0.003593 seconds
-  Import took 0.008190 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.602051 seconds.
-  path: Assets/Animations/Destination4 1.controller
-  artifactKey: Guid(60eead8d7c74ce84a8bced842c0f8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination4 1.controller using Guid(60eead8d7c74ce84a8bced842c0f8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f615350a986a2b1ef7daa7ccc82dcbe9') in 0.002899 seconds
-  Import took 0.007489 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001166 seconds.
-  path: Assets/Animations/Destination4 1.controller
-  artifactKey: Guid(60eead8d7c74ce84a8bced842c0f8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination4 1.controller using Guid(60eead8d7c74ce84a8bced842c0f8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f615350a986a2b1ef7daa7ccc82dcbe9') in 0.003630 seconds
-  Import took 0.007707 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.036898 seconds.
-  path: Assets/Animations/Destination5.controller
-  artifactKey: Guid(4ba29e43d4f3f9e488c6856ec1f766db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination5.controller using Guid(4ba29e43d4f3f9e488c6856ec1f766db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98ce7108def4731d14a15fd480afe72') in 0.002952 seconds
-  Import took 0.008429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.995837 seconds.
-  path: Assets/Animations/Destination6.controller
-  artifactKey: Guid(60eead8d7c74ce84a8bced842c0f8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination6.controller using Guid(60eead8d7c74ce84a8bced842c0f8048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c131634f328e1cfbfaec1ea0b23cf5') in 0.008404 seconds
-  Import took 0.013144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.450089 seconds.
-  path: Assets/Animations/Destination3.controller
-  artifactKey: Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination3.controller using Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b26cd5b57dbe524ff16ccacca8fb5c') in 0.003281 seconds
-  Import took 0.008147 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000784 seconds.
-  path: Assets/Animations/Destination3.controller
-  artifactKey: Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Destination3.controller using Guid(c054bb7750ab71a47b3deffcaf3c24ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b26cd5b57dbe524ff16ccacca8fb5c') in 0.003666 seconds
-  Import took 0.008314 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002556 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[C:/Users/looby/Documents/Unity/XRDEV-PRJ-EarthElevator2/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.894 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2758 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.3 MB.
-System memory in use after: 131.6 MB.
-
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 3343.
-Total: 4.081300 ms (FindLiveObjects: 0.320200 ms CreateObjectMapping: 0.140500 ms MarkObjects: 2.238000 ms  DeleteObjects: 1.380800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003470 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.72 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
@@ -692,6 +121,12 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -699,366 +134,41 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  1.104 seconds
+- Completed reload, in  0.887 seconds
 Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2834 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.9 MB.
-System memory in use after: 134.1 MB.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2889 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.7 MB.
+System memory in use after: 132.0 MB.
 
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 3423.
-Total: 3.915000 ms (FindLiveObjects: 0.319000 ms CreateObjectMapping: 0.186500 ms MarkObjects: 2.016100 ms  DeleteObjects: 1.392500 ms)
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3402.
+Total: 4.382500 ms (FindLiveObjects: 0.291900 ms CreateObjectMapping: 0.139800 ms MarkObjects: 2.605900 ms  DeleteObjects: 1.344100 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 1201.572189 seconds.
-  path: Assets/Realistic VR Hands/Demo.unity
-  artifactKey: Guid(f853c20998f4b7a4ab33ef5630866990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Demo.unity using Guid(f853c20998f4b7a4ab33ef5630866990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e9e49006581bdd148c8bfc17eeb20d') in 0.013456 seconds
-  Import took 0.019371 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.374206 seconds.
-  path: Assets/Scenes/ElevatorScene.unity
-  artifactKey: Guid(4051a4a7243cb6f4dbb6a717828adff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ElevatorScene.unity using Guid(4051a4a7243cb6f4dbb6a717828adff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79fa36b0cc9ce439cab2e275cc416bc') in 0.007050 seconds
-  Import took 0.011424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.946820 seconds.
-  path: Assets/Realistic VR Hands/Female Hands
-  artifactKey: Guid(41ebbe5024d185f4b8e393ed00defc50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands using Guid(41ebbe5024d185f4b8e393ed00defc50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f5f7e641ac5709dd2dd415aa0ac691') in 0.006790 seconds
-  Import took 0.011562 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.189964 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Prefabs
-  artifactKey: Guid(40ea0b4dd053fb444afef8855a83b81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Prefabs using Guid(40ea0b4dd053fb444afef8855a83b81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e80362b1320d0d5550c1e3bb30f19c') in 0.006197 seconds
-  Import took 0.010452 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.660292 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium
-  artifactKey: Guid(f067c33776e7cc14a8b6ccaa0c7bf1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium using Guid(f067c33776e7cc14a8b6ccaa0c7bf1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4348485628a1349d48546fba2dbc6358') in 0.006785 seconds
-  Import took 0.011466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000713 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium
-  artifactKey: Guid(f067c33776e7cc14a8b6ccaa0c7bf1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium using Guid(f067c33776e7cc14a8b6ccaa0c7bf1be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4348485628a1349d48546fba2dbc6358') in 0.002211 seconds
-  Import took 0.006410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.430343 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium/Left Female Hand_Medium.prefab
-  artifactKey: Guid(1adb0199ed31c254683e590b0a046ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium/Left Female Hand_Medium.prefab using Guid(1adb0199ed31c254683e590b0a046ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18de7408895e9e4ae13d198f2cc82cd2') in 0.210598 seconds
-  Import took 0.215189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium/Right Female Hand_Medium.prefab
-  artifactKey: Guid(4e5e46fd9d8c60245b66c50d46eadded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium/Right Female Hand_Medium.prefab using Guid(4e5e46fd9d8c60245b66c50d46eadded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1414e51bfd96221f52d4a040fdc1468b') in 0.030462 seconds
-  Import took 0.034919 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium/Left Female Hand_Medium.prefab
-  artifactKey: Guid(1adb0199ed31c254683e590b0a046ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Prefabs/Female Medium/Left Female Hand_Medium.prefab using Guid(1adb0199ed31c254683e590b0a046ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18de7408895e9e4ae13d198f2cc82cd2') in 0.021696 seconds
-  Import took 0.026612 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.214759 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Materials
-  artifactKey: Guid(452fe938c92073f49b4f7114cf8c5478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Materials using Guid(452fe938c92073f49b4f7114cf8c5478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2c3a3e19606c648587bbc9f2663e6b') in 0.009626 seconds
-  Import took 0.014087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.038657 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Materials/Female Dark.mat
-  artifactKey: Guid(7d096f29a130de844ba259f1225aa921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Materials/Female Dark.mat using Guid(7d096f29a130de844ba259f1225aa921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37d4c23f114e2cde61c14414eeab530') in 0.028511 seconds
-  Import took 0.032946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Materials/Female Medium.mat
-  artifactKey: Guid(c528833b62526f54b9396a2af0903198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Materials/Female Medium.mat using Guid(c528833b62526f54b9396a2af0903198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238034069e5c95aa8f31c661be5c76c6') in 0.015114 seconds
-  Import took 0.019677 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Materials/Female Light.mat
-  artifactKey: Guid(922c4298d3879d645bbdc107b08d380b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Materials/Female Light.mat using Guid(922c4298d3879d645bbdc107b08d380b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6acd131e6317ee2480f3f158f39ff33f') in 0.020410 seconds
-  Import took 0.025212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Materials/Female Very Light.mat
-  artifactKey: Guid(8e6d1a3139207ca4592167995eba1fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Materials/Female Very Light.mat using Guid(8e6d1a3139207ca4592167995eba1fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b65383b7534404c169a5956210d9bc8') in 0.025253 seconds
-  Import took 0.029684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Materials/Female Very Dark.mat
-  artifactKey: Guid(a5765d43cebdcbc4aa3c5c215c1c96bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Materials/Female Very Dark.mat using Guid(a5765d43cebdcbc4aa3c5c215c1c96bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f855e7171751f0419f1ae52734f2ff') in 0.020448 seconds
-  Import took 0.025631 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.165142 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation
-  artifactKey: Guid(45f8cde66af5d9d4b855f4b5b88befb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation using Guid(45f8cde66af5d9d4b855f4b5b88befb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f05f56b43f703757eacf0c094c6d8f') in 0.007319 seconds
-  Import took 0.012095 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001111 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation
-  artifactKey: Guid(45f8cde66af5d9d4b855f4b5b88befb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation using Guid(45f8cde66af5d9d4b855f4b5b88befb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f05f56b43f703757eacf0c094c6d8f') in 0.001972 seconds
-  Import took 0.006841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.436921 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand
-  artifactKey: Guid(e4183135ffef44c4b893c7578135f0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand using Guid(e4183135ffef44c4b893c7578135f0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '924acaa7941d641652dbf0b6baa39aa4') in 0.006975 seconds
-  Import took 0.011496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.060207 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Finger Hold.FBX
-  artifactKey: Guid(3f31368b4f4abd04ea756f9138821aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Finger Hold.FBX using Guid(3f31368b4f4abd04ea756f9138821aa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9292b2707880a364ae1cff626cf5bab') in 0.066543 seconds
-  Import took 0.070630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Small.FBX
-  artifactKey: Guid(87cf767c61abd49499d741eb293bc05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Small.FBX using Guid(87cf767c61abd49499d741eb293bc05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bd5e56ce0e6e6e3c0687aa67895958') in 0.027475 seconds
-  Import took 0.031616 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Vertical Hold.FBX
-  artifactKey: Guid(68278497c7fc36a4d92ee5e45709a878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Vertical Hold.FBX using Guid(68278497c7fc36a4d92ee5e45709a878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '385a084a108b264eb80b798ca73b0d44') in 0.031939 seconds
-  Import took 0.035789 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Vertical.FBX
-  artifactKey: Guid(f87c7d9de3ed72a48ad7e6af6ac30e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Vertical.FBX using Guid(f87c7d9de3ed72a48ad7e6af6ac30e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afac3c75cca0a2251fff7d5a2ebc8395') in 0.027102 seconds
-  Import took 0.031442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Fist Hold.FBX
-  artifactKey: Guid(56574f8b4479faf43b18c114da794734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Fist Hold.FBX using Guid(56574f8b4479faf43b18c114da794734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ccdd35131517a63d2e82ffb897e426f') in 0.026773 seconds
-  Import took 0.031326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000391 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Small Hold.FBX
-  artifactKey: Guid(704aafba1c179e4409460a3cb948dc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Small Hold.FBX using Guid(704aafba1c179e4409460a3cb948dc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b61c6ffb54387f455e76033243875e') in 0.024350 seconds
-  Import took 0.029536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Horizontal.FBX
-  artifactKey: Guid(a1c15feef35d6f9408a3782ab870b657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Horizontal.FBX using Guid(a1c15feef35d6f9408a3782ab870b657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94ff343bdfa7e66a1a68dab03f438a4') in 0.026159 seconds
-  Import took 0.030738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Big.FBX
-  artifactKey: Guid(c9918a0613fd5ba489d218b0e36263aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Big.FBX using Guid(c9918a0613fd5ba489d218b0e36263aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725e7829f4613ee43cbe1d0c2f74e500') in 0.035216 seconds
-  Import took 0.039421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Horizontal Hold.FBX
-  artifactKey: Guid(5ed4a0c6a002a8d4fa29d3633f085f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Horizontal Hold.FBX using Guid(5ed4a0c6a002a8d4fa29d3633f085f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474efb5b3977cbbea1e9b823f0ae0348') in 0.030399 seconds
-  Import took 0.034805 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Finger.FBX
-  artifactKey: Guid(224d6459c062699478747ef36199b4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Finger.FBX using Guid(224d6459c062699478747ef36199b4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e0ee3bbc1e0711da68652fab7391985') in 0.037462 seconds
-  Import took 0.041356 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Fist.FBX
-  artifactKey: Guid(7140fa8789d798f499bb505afec2dbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Fist.FBX using Guid(7140fa8789d798f499bb505afec2dbac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d46232d094a8a7acf3932d81b05370f') in 0.031936 seconds
-  Import took 0.035916 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Idle.FBX
-  artifactKey: Guid(0fea389ebc1baa24a9a65639f22378c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Idle.FBX using Guid(0fea389ebc1baa24a9a65639f22378c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5b959795413a382bf110615971267c') in 0.030442 seconds
-  Import took 0.034457 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Big Hold.FBX
-  artifactKey: Guid(3e5e6b8aff320174ba33cfa60b910dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Realistic VR Hands/Female Hands/Animation/Left Female Hand/Left Female Hand@Grab Big Hold.FBX using Guid(3e5e6b8aff320174ba33cfa60b910dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e7c9e6f9a6263ddc8cf31a25638c0f') in 0.035073 seconds
-  Import took 0.039280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 265.422054 seconds.
-  path: Assets/Scripts/VRInput.cs
-  artifactKey: Guid(28e991f2aef42aa4ab67e002ca140127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/VRInput.cs using Guid(28e991f2aef42aa4ab67e002ca140127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb3809b7c6a10cd5892a7e1d5dffeff') in 0.007333 seconds
-  Import took 0.012750 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 295.730154 seconds.
-  path: Assets/Materials/Button.mat
-  artifactKey: Guid(f21d789811d810040aed436ef9eb0be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Button.mat using Guid(f21d789811d810040aed436ef9eb0be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16aa1a1dd9241678182df1e834edcbec') in 0.017506 seconds
-  Import took 0.022073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.230422 seconds.
-  path: Assets/Materials/Real Materials/Gneiss.mat
-  artifactKey: Guid(cf076b676d18df649a4cadad6024a725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Gneiss.mat using Guid(cf076b676d18df649a4cadad6024a725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360c81d2887889223cbf01be3cb9e3c0') in 0.014883 seconds
-  Import took 0.019784 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.745926 seconds.
-  path: Assets/Materials/Real Materials/Textures
-  artifactKey: Guid(978e41e19b224794784e6b661e631851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Textures using Guid(978e41e19b224794784e6b661e631851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5834e9e00d8d395081b90641f0f0e99') in 0.007671 seconds
-  Import took 0.012515 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.035179 seconds.
-  path: Assets/Materials/Real Materials/Textures/granite rough diffuse.png
-  artifactKey: Guid(3acf3fee13bc417448f6617dd9c2cf87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Textures/granite rough diffuse.png using Guid(3acf3fee13bc417448f6617dd9c2cf87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58d5403d4bcc6e6b92ad79d7621b2032') in 0.030382 seconds
-  Import took 0.034647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/Materials/Real Materials/Textures/granite rough metalness.png
-  artifactKey: Guid(d0881c8fe971ed743b96d8bb2bbf8eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Textures/granite rough metalness.png using Guid(d0881c8fe971ed743b96d8bb2bbf8eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25901ebccd4c207e8ec7d40468d27f81') in 0.025953 seconds
-  Import took 0.031316 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Materials/Real Materials/Textures/granite rough normal.png
-  artifactKey: Guid(f0128ec228c284b41b5fa4d010cddb76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Textures/granite rough normal.png using Guid(f0128ec228c284b41b5fa4d010cddb76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc8b54e14b195dc1d77328a748012ac') in 0.016847 seconds
-  Import took 0.021504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Materials/Real Materials/Textures/marble rough metalness.png
-  artifactKey: Guid(ee30fe3688a569e4099862b20fc9464e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Textures/marble rough metalness.png using Guid(ee30fe3688a569e4099862b20fc9464e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef13d795bd037d9539c3cbaf69d31172') in 0.046905 seconds
-  Import took 0.050896 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Materials/Real Materials/Textures/marble white diffuse.png
-  artifactKey: Guid(c3398e3f2ed2dab41a39ca40ddd226e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Textures/marble white diffuse.png using Guid(c3398e3f2ed2dab41a39ca40ddd226e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9421715bb32206b71259b63e42d596f') in 0.015337 seconds
-  Import took 0.019620 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 235.308747 seconds.
-  path: Assets/Materials/Real Materials/Gneiss.mat
-  artifactKey: Guid(cf076b676d18df649a4cadad6024a725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Gneiss.mat using Guid(cf076b676d18df649a4cadad6024a725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5acb99dfaa20d9bab173d116e8118f24') in 0.050321 seconds
-  Import took 0.056373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3232.520606 seconds.
-  path: Assets/Materials/Real Materials/Lever.cs
-  artifactKey: Guid(9cbd134f521bdcd4d960662c74b2129f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Real Materials/Lever.cs using Guid(9cbd134f521bdcd4d960662c74b2129f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a9c260c5b142fc320f855cec9f4a74') in 0.006794 seconds
-  Import took 0.012053 seconds .
+  Time since last request: 9.736874 seconds.
+  path: Assets/Scripts/UI
+  artifactKey: Guid(ff27e3b1e788f7b499714a7563210aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI using Guid(ff27e3b1e788f7b499714a7563210aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bfc7041d198d3d66841ca6f21a06569') in 0.005642 seconds
+  Import took 0.010141 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002690 seconds.
+Registered in 0.003135 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.98 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
@@ -1071,6 +181,536 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.938 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 2889 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.8 MB.
+System memory in use after: 132.0 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3406.
+Total: 3.846600 ms (FindLiveObjects: 0.284200 ms CreateObjectMapping: 0.143400 ms MarkObjects: 2.025800 ms  DeleteObjects: 1.392400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 99.901484 seconds.
+  path: Assets/Scripts/TemperatureUI.cs
+  artifactKey: Guid(94a5d990e3b469c4f859802af44ba8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TemperatureUI.cs using Guid(94a5d990e3b469c4f859802af44ba8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fadb4f6a8e81df22fd35131a88dc53af') in 0.010594 seconds
+  Import took 0.015480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001590 seconds.
+  path: Assets/Scripts/TemperatureUI.cs
+  artifactKey: Guid(94a5d990e3b469c4f859802af44ba8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TemperatureUI.cs using Guid(94a5d990e3b469c4f859802af44ba8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fadb4f6a8e81df22fd35131a88dc53af') in 0.001745 seconds
+  Import took 0.006353 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003593 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.992 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.8 MB.
+System memory in use after: 132.1 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3411.
+Total: 4.713000 ms (FindLiveObjects: 0.317200 ms CreateObjectMapping: 0.218500 ms MarkObjects: 2.715900 ms  DeleteObjects: 1.460500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003573 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.917 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.9 MB.
+System memory in use after: 132.1 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3415.
+Total: 3.659700 ms (FindLiveObjects: 0.302500 ms CreateObjectMapping: 0.147900 ms MarkObjects: 1.893500 ms  DeleteObjects: 1.315000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 56.602164 seconds.
+  path: Assets/Scripts/UI/DepthUI.cs
+  artifactKey: Guid(aca95711da526ab44b13316023efc6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/DepthUI.cs using Guid(aca95711da526ab44b13316023efc6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976dad93d7870a1c1eb395ddb1f82bb3') in 0.009252 seconds
+  Import took 0.014026 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003909 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.891 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 2891 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.9 MB.
+System memory in use after: 132.2 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3420.
+Total: 4.318600 ms (FindLiveObjects: 0.413400 ms CreateObjectMapping: 0.171100 ms MarkObjects: 2.281600 ms  DeleteObjects: 1.451600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003890 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.924 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2891 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.9 MB.
+System memory in use after: 132.2 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3424.
+Total: 3.593300 ms (FindLiveObjects: 0.275000 ms CreateObjectMapping: 0.137700 ms MarkObjects: 1.890900 ms  DeleteObjects: 1.288600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 330.107756 seconds.
+  path: Assets/Scripts/UI/SpeedUI.cs
+  artifactKey: Guid(f2985607f18082641a361ffaa063667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/SpeedUI.cs using Guid(f2985607f18082641a361ffaa063667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0df7982b740c2244138cf030acc8830') in 0.005078 seconds
+  Import took 0.009108 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003408 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.923 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Unloading 2891 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.9 MB.
+System memory in use after: 132.2 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3428.
+Total: 4.689200 ms (FindLiveObjects: 0.600800 ms CreateObjectMapping: 0.179000 ms MarkObjects: 2.265700 ms  DeleteObjects: 1.642800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 146.314853 seconds.
+  path: Assets/Scripts/UI/DepthUI.cs
+  artifactKey: Guid(aca95711da526ab44b13316023efc6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/DepthUI.cs using Guid(aca95711da526ab44b13316023efc6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3227f6895931cd2d030a5a9dc0c1de') in 0.005899 seconds
+  Import took 0.010270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.446233 seconds.
+  path: Assets/Scripts/UI/PressureUI.cs
+  artifactKey: Guid(1cf8599563859da478237b64ac531f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/PressureUI.cs using Guid(1cf8599563859da478237b64ac531f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83f3e8e172a9c349a5cc2b765f67791') in 0.006054 seconds
+  Import took 0.011724 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003729 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.954 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.0 MB.
+System memory in use after: 132.2 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3433.
+Total: 4.495000 ms (FindLiveObjects: 0.385800 ms CreateObjectMapping: 0.213800 ms MarkObjects: 2.521900 ms  DeleteObjects: 1.372300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003418 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.960 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.0 MB.
+System memory in use after: 132.2 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3437.
+Total: 4.946100 ms (FindLiveObjects: 0.670600 ms CreateObjectMapping: 0.399500 ms MarkObjects: 2.319200 ms  DeleteObjects: 1.556100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1250.719311 seconds.
+  path: Assets/Scripts/UI/TemperatureUI.cs
+  artifactKey: Guid(94a5d990e3b469c4f859802af44ba8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/TemperatureUI.cs using Guid(94a5d990e3b469c4f859802af44ba8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea229da13821b59368a4e4306c49369') in 0.005434 seconds
+  Import took 0.010190 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003522 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.928 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.9 MB.
+System memory in use after: 132.2 MB.
+
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3441.
+Total: 4.526400 ms (FindLiveObjects: 0.518400 ms CreateObjectMapping: 0.250100 ms MarkObjects: 2.099500 ms  DeleteObjects: 1.636000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003672 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -1080,28 +720,31 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 - Completed reload, in  1.000 seconds
 Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.8 MB.
-System memory in use after: 148.1 MB.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.0 MB.
+System memory in use after: 132.2 MB.
 
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3472.
-Total: 4.332600 ms (FindLiveObjects: 0.585200 ms CreateObjectMapping: 0.291300 ms MarkObjects: 2.134500 ms  DeleteObjects: 1.320900 ms)
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3445.
+Total: 4.346800 ms (FindLiveObjects: 0.319800 ms CreateObjectMapping: 0.161500 ms MarkObjects: 2.189500 ms  DeleteObjects: 1.675000 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002776 seconds.
+Registered in 0.003586 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
@@ -1114,6 +757,12 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -1121,86 +770,33 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.888 seconds
+- Completed reload, in  1.042 seconds
 Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2834 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.7 MB.
-System memory in use after: 148.0 MB.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.0 MB.
+System memory in use after: 132.3 MB.
 
-Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 3475.
-Total: 3.864700 ms (FindLiveObjects: 0.299000 ms CreateObjectMapping: 0.151300 ms MarkObjects: 1.969700 ms  DeleteObjects: 1.443500 ms)
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3449.
+Total: 4.680400 ms (FindLiveObjects: 0.375400 ms CreateObjectMapping: 0.209800 ms MarkObjects: 2.404600 ms  DeleteObjects: 1.689600 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 24.188234 seconds.
-  path: Assets/Materials/Lever.mat
-  artifactKey: Guid(22efa40f78f96e944b69f5bc3736a535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Lever.mat using Guid(22efa40f78f96e944b69f5bc3736a535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3906e0df179f48f5819aca96189d45') in 0.143884 seconds
-  Import took 0.148322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 261.735972 seconds.
-  path: Assets/Materials/Channel.mat
-  artifactKey: Guid(6ec4cea849f039d49bb161b6c1530e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Channel.mat using Guid(6ec4cea849f039d49bb161b6c1530e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e925c093be578c708f113afb9a50718f') in 0.015815 seconds
-  Import took 0.020035 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.084996 seconds.
-  path: Assets/Materials/Channel.mat
-  artifactKey: Guid(6ec4cea849f039d49bb161b6c1530e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Channel.mat using Guid(6ec4cea849f039d49bb161b6c1530e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a930a59e2af2a209bf044110413d47') in 0.008172 seconds
-  Import took 0.012537 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Materials/Lever.mat
-  artifactKey: Guid(22efa40f78f96e944b69f5bc3736a535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Lever.mat using Guid(22efa40f78f96e944b69f5bc3736a535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9533e6eaeca1081ab0be68cde53b94a9') in 0.019159 seconds
-  Import took 0.023594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 136.400256 seconds.
-  path: Assets/Materials/Channel.mat
-  artifactKey: Guid(6ec4cea849f039d49bb161b6c1530e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Channel.mat using Guid(6ec4cea849f039d49bb161b6c1530e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2421cf5fc10e26fc8810c8927bf1d20') in 0.022458 seconds
-  Import took 0.027637 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 379.809737 seconds.
-  path: Assets/Prefabs/Shaft2Gneiss.prefab
-  artifactKey: Guid(f840bf250f9c5404c8d8bb476c1e75c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft2Gneiss.prefab using Guid(f840bf250f9c5404c8d8bb476c1e75c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c806b4d9c4bd1936f68649ebb46dfa8d') in 0.017492 seconds
-  Import took 0.022440 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 243.779415 seconds.
-  path: Assets/Scripts/LeverAngle.cs
-  artifactKey: Guid(76f2aebde638aca4ea9f16bdf19b857d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/LeverAngle.cs using Guid(76f2aebde638aca4ea9f16bdf19b857d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3adb51d943050dd85b0858e313296a97') in 0.008513 seconds
-  Import took 0.013777 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003044 seconds.
+Registered in 0.003629 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
@@ -1213,6 +809,12 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -1220,30 +822,33 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.912 seconds
+- Completed reload, in  1.012 seconds
 Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.2 MB.
+Refreshing native plugins compatible for Editor in 0.81 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.1 MB.
+System memory in use after: 134.3 MB.
 
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3516.
-Total: 4.321900 ms (FindLiveObjects: 0.506600 ms CreateObjectMapping: 0.245700 ms MarkObjects: 2.212200 ms  DeleteObjects: 1.355900 ms)
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3453.
+Total: 4.465000 ms (FindLiveObjects: 0.306300 ms CreateObjectMapping: 0.149400 ms MarkObjects: 2.568400 ms  DeleteObjects: 1.439900 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002642 seconds.
+Registered in 0.004066 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
@@ -1256,6 +861,12 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -1263,38 +874,49 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.877 seconds
+- Completed reload, in  1.034 seconds
 Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.2 MB.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.0 MB.
+System memory in use after: 132.3 MB.
 
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3520.
-Total: 4.175100 ms (FindLiveObjects: 0.320300 ms CreateObjectMapping: 0.150400 ms MarkObjects: 2.146200 ms  DeleteObjects: 1.557100 ms)
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3457.
+Total: 4.554100 ms (FindLiveObjects: 0.310600 ms CreateObjectMapping: 0.325300 ms MarkObjects: 2.265200 ms  DeleteObjects: 1.652200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 2034.801430 seconds.
+  path: Assets/Scripts/UI/PressureUI.cs
+  artifactKey: Guid(1cf8599563859da478237b64ac531f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/PressureUI.cs using Guid(1cf8599563859da478237b64ac531f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c832507139d35151ad4331f7a0673c2c') in 0.005353 seconds
+  Import took 0.009516 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 362.298224 seconds.
-  path: Assets/Scripts/LeverAngle.cs
-  artifactKey: Guid(76f2aebde638aca4ea9f16bdf19b857d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/LeverAngle.cs using Guid(76f2aebde638aca4ea9f16bdf19b857d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e66f128ea8b4a0b17981ae7b3cb3eb1') in 0.006960 seconds
-  Import took 0.011514 seconds .
+  Time since last request: 691.234648 seconds.
+  path: Assets/UI/Fonts/Digital7-1e1Z SDF.asset
+  artifactKey: Guid(11c4cd0a9c5649c408d51ba11bacc965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Fonts/Digital7-1e1Z SDF.asset using Guid(11c4cd0a9c5649c408d51ba11bacc965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093e32344d1d13b7fa30618a7fd15498') in 0.262913 seconds
+  Import took 0.268513 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002649 seconds.
+Registered in 0.003887 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.79 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
@@ -1307,6 +929,12 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -1314,38 +942,33 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.951 seconds
+- Completed reload, in  1.104 seconds
 Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.2 MB.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.0 MB.
+System memory in use after: 137.3 MB.
 
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3524.
-Total: 4.189200 ms (FindLiveObjects: 0.509600 ms CreateObjectMapping: 0.153400 ms MarkObjects: 2.132000 ms  DeleteObjects: 1.392900 ms)
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3542.
+Total: 3.573200 ms (FindLiveObjects: 0.285800 ms CreateObjectMapping: 0.213100 ms MarkObjects: 1.935300 ms  DeleteObjects: 1.138400 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 713.625940 seconds.
-  path: Assets/Scripts/GrabbableObject.cs
-  artifactKey: Guid(fe9f4c45decff4241a811b48b9c293c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GrabbableObject.cs using Guid(fe9f4c45decff4241a811b48b9c293c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477d4582434c652688b2afa2fdf3a47b') in 0.011835 seconds
-  Import took 0.017493 seconds .
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002462 seconds.
+Registered in 0.004132 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
@@ -1358,6 +981,12 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -1365,30 +994,41 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.927 seconds
+- Completed reload, in  1.085 seconds
 Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.2 MB.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.0 MB.
+System memory in use after: 137.3 MB.
 
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3528.
-Total: 4.983900 ms (FindLiveObjects: 0.518500 ms CreateObjectMapping: 0.243300 ms MarkObjects: 2.152200 ms  DeleteObjects: 2.068600 ms)
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3546.
+Total: 4.028900 ms (FindLiveObjects: 0.355600 ms CreateObjectMapping: 0.181200 ms MarkObjects: 2.104100 ms  DeleteObjects: 1.386900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 447.382021 seconds.
+  path: Assets/Scripts/MoveElevator.cs
+  artifactKey: Guid(6b1b4e070b0c2d5429efab842b8480de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MoveElevator.cs using Guid(6b1b4e070b0c2d5429efab842b8480de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3433d78871625b7e70b265c41e67739') in 0.010007 seconds
+  Import took 0.015444 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003050 seconds.
+Registered in 0.003504 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
@@ -1401,6 +1041,12 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -1408,395 +1054,27 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.939 seconds
+- Completed reload, in  1.051 seconds
 Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.2 MB.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 2892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.1 MB.
+System memory in use after: 137.3 MB.
 
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3532.
-Total: 3.738700 ms (FindLiveObjects: 0.330100 ms CreateObjectMapping: 0.187700 ms MarkObjects: 1.882800 ms  DeleteObjects: 1.337300 ms)
+Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3550.
+Total: 3.885600 ms (FindLiveObjects: 0.329100 ms CreateObjectMapping: 0.153400 ms MarkObjects: 2.063700 ms  DeleteObjects: 1.338700 ms)
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002655 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.909 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3536.
-Total: 5.181900 ms (FindLiveObjects: 0.513800 ms CreateObjectMapping: 0.200100 ms MarkObjects: 2.999100 ms  DeleteObjects: 1.467600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002675 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.12 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.931 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3540.
-Total: 4.041200 ms (FindLiveObjects: 0.295600 ms CreateObjectMapping: 0.292900 ms MarkObjects: 2.080800 ms  DeleteObjects: 1.371000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002800 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.976 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3544.
-Total: 4.833800 ms (FindLiveObjects: 0.680700 ms CreateObjectMapping: 0.269800 ms MarkObjects: 2.491700 ms  DeleteObjects: 1.388200 ms)
-
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 420.648033 seconds.
-  path: Assets/Prefabs/Shaft1Granite.prefab
-  artifactKey: Guid(cc55286aefa145746be7cc7fb6e9e284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft1Granite.prefab using Guid(cc55286aefa145746be7cc7fb6e9e284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c397c6d8b113ab2b3aaaf450746d86') in 0.029720 seconds
-  Import took 0.034174 seconds .
+  Time since last request: 34.789228 seconds.
+  path: Assets/Scripts/MoveElevator.cs
+  artifactKey: Guid(6b1b4e070b0c2d5429efab842b8480de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MoveElevator.cs using Guid(6b1b4e070b0c2d5429efab842b8480de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6468c37d92d41982017ac64c4ad48291') in 0.005937 seconds
+  Import took 0.010932 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.493126 seconds.
-  path: Assets/Prefabs/Shaft1Granite.prefab
-  artifactKey: Guid(cc55286aefa145746be7cc7fb6e9e284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft1Granite.prefab using Guid(cc55286aefa145746be7cc7fb6e9e284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd362c561d303c86f7bd9bd353887c3d') in 0.004676 seconds
-  Import took 0.009291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.173569 seconds.
-  path: Assets/Prefabs/Shaft1Granite.prefab
-  artifactKey: Guid(cc55286aefa145746be7cc7fb6e9e284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft1Granite.prefab using Guid(cc55286aefa145746be7cc7fb6e9e284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '997265bfc72b5c56c8bc1aaaccd08782') in 0.004112 seconds
-  Import took 0.009117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.935353 seconds.
-  path: Assets/Prefabs/Shaft2Gneiss.prefab
-  artifactKey: Guid(f840bf250f9c5404c8d8bb476c1e75c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft2Gneiss.prefab using Guid(f840bf250f9c5404c8d8bb476c1e75c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cb347858a3db27e61294e6d9431e7d') in 0.004664 seconds
-  Import took 0.010338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.583059 seconds.
-  path: Assets/Prefabs/Shaft2Gneiss.prefab
-  artifactKey: Guid(f840bf250f9c5404c8d8bb476c1e75c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft2Gneiss.prefab using Guid(f840bf250f9c5404c8d8bb476c1e75c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0844052a6af20bad83788968a181badc') in 0.004414 seconds
-  Import took 0.009005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.113833 seconds.
-  path: Assets/Prefabs/Shaft2Gneiss.prefab
-  artifactKey: Guid(f840bf250f9c5404c8d8bb476c1e75c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft2Gneiss.prefab using Guid(f840bf250f9c5404c8d8bb476c1e75c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f20013f8e665f575014237eee60962a') in 0.003971 seconds
-  Import took 0.009471 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.578074 seconds.
-  path: Assets/Prefabs/Shaft3Basalt.prefab
-  artifactKey: Guid(75cc7b4dcbe777a4bb7c2e19a04f846a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft3Basalt.prefab using Guid(75cc7b4dcbe777a4bb7c2e19a04f846a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6706797232db66541d97d7296efbee') in 0.008380 seconds
-  Import took 0.012951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.390993 seconds.
-  path: Assets/Prefabs/Shaft3Basalt.prefab
-  artifactKey: Guid(75cc7b4dcbe777a4bb7c2e19a04f846a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft3Basalt.prefab using Guid(75cc7b4dcbe777a4bb7c2e19a04f846a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5347dcfadae1f726cb92bfc976b5566d') in 0.004539 seconds
-  Import took 0.009155 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.014846 seconds.
-  path: Assets/Prefabs/Shaft3Basalt.prefab
-  artifactKey: Guid(75cc7b4dcbe777a4bb7c2e19a04f846a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft3Basalt.prefab using Guid(75cc7b4dcbe777a4bb7c2e19a04f846a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '261f2a220f64eb17c2ad75036fe8602a') in 0.005105 seconds
-  Import took 0.009239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.674879 seconds.
-  path: Assets/Prefabs/Shaft4Lithosphere.prefab
-  artifactKey: Guid(c1679ed2c5123c046812fe033a23fc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft4Lithosphere.prefab using Guid(c1679ed2c5123c046812fe033a23fc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffba2a5c8d703e1df85736ceda834aa1') in 0.008777 seconds
-  Import took 0.013989 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.368764 seconds.
-  path: Assets/Prefabs/Shaft4Lithosphere.prefab
-  artifactKey: Guid(c1679ed2c5123c046812fe033a23fc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft4Lithosphere.prefab using Guid(c1679ed2c5123c046812fe033a23fc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44aaea11206e0832f57494fabbd4404d') in 0.004322 seconds
-  Import took 0.009900 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.009145 seconds.
-  path: Assets/Prefabs/Shaft4Lithosphere.prefab
-  artifactKey: Guid(c1679ed2c5123c046812fe033a23fc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft4Lithosphere.prefab using Guid(c1679ed2c5123c046812fe033a23fc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583736a454083fe4ca12a84c7fef6c78') in 0.004835 seconds
-  Import took 0.009863 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.830626 seconds.
-  path: Assets/Prefabs/Shaft5OuterCore.prefab
-  artifactKey: Guid(ed750473bd3b4d4429d44570708136bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft5OuterCore.prefab using Guid(ed750473bd3b4d4429d44570708136bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ca079a2643ae620fdd056be52b4a0b') in 0.009412 seconds
-  Import took 0.014366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.372465 seconds.
-  path: Assets/Prefabs/Shaft5OuterCore.prefab
-  artifactKey: Guid(ed750473bd3b4d4429d44570708136bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft5OuterCore.prefab using Guid(ed750473bd3b4d4429d44570708136bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed05b3392071c6e9551c9d3e1c6eaa7b') in 0.005034 seconds
-  Import took 0.009984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.783138 seconds.
-  path: Assets/Prefabs/Shaft5OuterCore.prefab
-  artifactKey: Guid(ed750473bd3b4d4429d44570708136bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Shaft5OuterCore.prefab using Guid(ed750473bd3b4d4429d44570708136bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d81941ec6fc9bad6e98bace63880e3') in 0.004018 seconds
-  Import took 0.008796 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005971 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.981 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3548.
-Total: 4.105000 ms (FindLiveObjects: 0.293700 ms CreateObjectMapping: 0.136600 ms MarkObjects: 2.184300 ms  DeleteObjects: 1.489300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002613 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.929 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.0 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3552.
-Total: 4.255500 ms (FindLiveObjects: 0.368300 ms CreateObjectMapping: 0.168400 ms MarkObjects: 2.259200 ms  DeleteObjects: 1.458600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002822 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  0.907 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.1 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 81 unused Assets to reduce memory usage. Loaded Objects now: 3556.
-Total: 4.105700 ms (FindLiveObjects: 0.426700 ms CreateObjectMapping: 0.173400 ms MarkObjects: 2.204600 ms  DeleteObjects: 1.300200 ms)
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file

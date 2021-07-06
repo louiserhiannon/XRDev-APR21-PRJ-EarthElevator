@@ -15,11 +15,18 @@ public class MoveElevator : MonoBehaviour
     public float speed;
     public LeverAngle leverAngle;
     public float leverValue;
-    //private List<float> currentShaftDepths;
-    private float startPosUp = 35f;
-    private float startPosDown = -4f;
-    private float endPosUp = -4f;
-    private float endPosDown = 35f;
+    private List<float> currentShaftDepths;
+    private float startPosUp = 30f;
+    private float startPosDown = -20f;
+    private float endPosUp = -20f;
+    private float endPosDown = 30f;
+    //private float endPosition = -1f;
+    //private float downPosBottom = -26f;
+    //private float downPosMiddle = -1f;
+    //private float downPosTop = 24f;
+    //private float upPosBottom = -1;
+    //private float upPosMiddle = 24;
+    //private float upPosTop = 49;
 
     //Earth Structure Variables
     public List<float> transitions;
@@ -38,6 +45,7 @@ public class MoveElevator : MonoBehaviour
     }
 
     public List<Layer> layers;
+    
 
     void Start()
     {
@@ -103,34 +111,11 @@ public class MoveElevator : MonoBehaviour
             }
         }
 
-        //if (currentDepth > (graniteGneissTransition - speed / 100) && currentDepth < (graniteGneissTransition + speed / 100))
-        //{
-        //    for (int i = 0; i < activePoints.Count; i++) //should change to shafts, but it doesn't like that for some reason...
-        //    {
-        //        layers[0].shafts[i].SetActive(false); //de-activate granite (layer 0)
-        //        layers[1].shafts[i].SetActive(true); //activate gneiss (layer 1)
-        //    }
-        //}
+        //play elevator sound when moving
+        PlayElevatorSound();
 
-        //if (currentDepth > (gneissLithosphereTransition - speed / 100) && currentDepth < (gneissLithosphereTransition + speed / 100))
-        //{
-        //    for (int i = 0; i < activePoints.Count; i++) //should change to shafts, but it doesn't like that for some reason...
-        //    {
-        //        layers[1].shafts[i].SetActive(false); //de-activate gneiss (layer 1)
-        //        layers[2].shafts[i].SetActive(true); //activate lithosphere (layer 2)
-        //    }
-        //}
 
-        //if (currentDepth > (mantleCoreTransition - speed / 100) && currentDepth < (mantleCoreTransition + speed / 100))
-        //{
-        //    for (int i = 0; i < activePoints.Count; i++) //should change to shafts, but it doesn't like that for some reason...
-        //    {
-        //        layers[2].shafts[i].SetActive(false); //de-activate lithosphere (layer 2)
-        //        layers[3].shafts[i].SetActive(true); //activate outer core (layer 3)
-        //    }
-        //}
-
-        // move and cycle shaft segments (move parent transform, not segments)
+        // move shaft segments (move parent transform, not segments)
         for (int i = 0; i < activePoints.Count; i++)
         {
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
@@ -139,6 +124,27 @@ public class MoveElevator : MonoBehaviour
                 activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, startPosDown, activePoints[i].transform.position.z);
             }
         }
+        //cycle shaft segments
+        //if (activePoints[0].transform.position.y >= endPosition)
+        //{
+        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, downPosBottom, activePoints[2].transform.position.z);
+        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, downPosMiddle, activePoints[0].transform.position.z);
+        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, downPosTop, activePoints[1].transform.position.z);
+        //}
+
+        //if (activePoints[1].transform.position.y >= endPosition)
+        //{
+        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, downPosBottom, activePoints[0].transform.position.z);
+        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, downPosMiddle, activePoints[1].transform.position.z);
+        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, downPosTop, activePoints[2].transform.position.z);
+        //}
+
+        //if (activePoints[2].transform.position.y >= endPosition)
+        //{
+        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, downPosBottom, activePoints[1].transform.position.z);
+        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, downPosMiddle, activePoints[2].transform.position.z);
+        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, downPosTop, activePoints[0].transform.position.z);
+        //}
 
         //update depth
         currentDepth += speed * Time.deltaTime;
@@ -169,33 +175,8 @@ public class MoveElevator : MonoBehaviour
             }
         }
 
-        //if (currentDepth > (graniteGneissTransition - speed / 100) && currentDepth < (graniteGneissTransition + speed / 100))
-        //{
-        //    for(int i = 0; i < activePoints.Count; i++) //should change to shafts, but it doesn't like that for some reason...
-        //    {
-        //        layers[1].shafts[i].SetActive(false); //de-activate gneiss (layer 1)
-        //        layers[0].shafts[i].SetActive(true); //activate granite (layer 0)
-        //    }
-        //}
-
-
-        //if (currentDepth > (gneissLithosphereTransition - speed / 100) && currentDepth < (gneissLithosphereTransition + speed / 100))
-        //{
-        //    for (int i = 0; i < activePoints.Count; i++) //should change to shafts, but it doesn't like that for some reason...
-        //    {
-        //        layers[2].shafts[i].SetActive(false); //de-activate lithosphere (layer 2)
-        //        layers[1].shafts[i].SetActive(true); //activate gneiss (layer 1)
-        //    }
-        //}
-
-        //if (currentDepth > (mantleCoreTransition - speed / 100) && currentDepth < (mantleCoreTransition + speed / 100))
-        //{
-        //    for (int i = 0; i < activePoints.Count; i++) //should change to shafts, but it doesn't like that for some reason...
-        //    {
-        //        layers[3].shafts[i].SetActive(false); //de-activate outer core (layer 3)
-        //        layers[2].shafts[i].SetActive(true); //activate lithosphere (layer 2)
-        //    }
-        //}
+        //play elevator sound when moving
+        PlayElevatorSound();
 
         // move and cycle shaft segment (cycle parents not shafts)
         for (int i = 0; i < activePoints.Count; i++)
@@ -206,6 +187,28 @@ public class MoveElevator : MonoBehaviour
                 activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, startPosUp, activePoints[i].transform.position.z);
             }
         }
+
+        //cycle shaft segments
+        //if (activePoints[0].transform.position.y <= endPosition)
+        //{
+        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, upPosBottom, activePoints[0].transform.position.z);
+        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, upPosMiddle, activePoints[1].transform.position.z);
+        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, upPosTop, activePoints[2].transform.position.z);
+        //}
+
+        //if (activePoints[1].transform.position.y >= endPosition)
+        //{
+        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, upPosBottom, activePoints[1].transform.position.z);
+        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, upPosMiddle, activePoints[2].transform.position.z);
+        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, upPosTop, activePoints[0].transform.position.z);
+        //}
+
+        //if (activePoints[2].transform.position.y >= endPosition)
+        //{
+        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, upPosBottom, activePoints[2].transform.position.z);
+        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, upPosMiddle, activePoints[0].transform.position.z);
+        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, upPosTop, activePoints[1].transform.position.z);
+        //}
 
         //update depth
         currentDepth -= speed * Time.deltaTime;
