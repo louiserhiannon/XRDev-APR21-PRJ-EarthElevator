@@ -22,6 +22,6 @@ public class SpeedUI : MonoBehaviour
     public void GetSpeed()
     {
         speed = Mathf.Round(elevator.speed);
-        speedText.text = speed + " km/hr";
+        speedText.text = speed + " km/s";
     }
 }

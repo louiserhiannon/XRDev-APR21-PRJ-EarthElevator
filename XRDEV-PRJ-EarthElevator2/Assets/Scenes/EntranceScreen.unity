@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatedButton: {fileID: 222817578}
-  destination: {fileID: 1017101006}
+  destination: {fileID: 0}
   depth: 390
 --- !u!114 &222817578
 MonoBehaviour:
@@ -2262,7 +2262,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20966
+  m_Name: pb_Mesh22008
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2919,7 +2919,6 @@ GameObject:
   - component: {fileID: 1017101009}
   - component: {fileID: 1017101008}
   - component: {fileID: 1017101007}
-  - component: {fileID: 1017101006}
   - component: {fileID: 1017101005}
   m_Layer: 0
   m_Name: Elevator (1)
@@ -3024,59 +3023,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1017101006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017101004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1b4e070b0c2d5429efab842b8480de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activePoints:
-  - {fileID: 1744431252}
-  - {fileID: 900059841}
-  - {fileID: 2070316692}
-  elevatorSound: {fileID: 8300000, guid: d8f2ddaacf5f7e54bb1315689c7a2ede, type: 3}
-  elevatorVolume: 0.5
-  destinationDepth: 0
-  currentDepth: 0
-  elevatorMaxSpeed: 30
-  speed: 0
-  leverAngle: {fileID: 276746692}
-  leverValue: 0
-  transitions:
-  - 50
-  - 100
-  - 150
-  - 450
-  graniteGneissTransition: 0
-  gneissLithosphereTransition: 0
-  mantleCoreTransition: 0
-  layers:
-  - key: Granite
-    prefab: {fileID: 1660335962655666661, guid: cc55286aefa145746be7cc7fb6e9e284, type: 3}
-    shafts: []
-    active: 1
-  - key: Gneiss
-    prefab: {fileID: 120391929339016355, guid: f840bf250f9c5404c8d8bb476c1e75c1, type: 3}
-    shafts: []
-    active: 0
-  - key: Basalt
-    prefab: {fileID: 7392280905526994010, guid: 75cc7b4dcbe777a4bb7c2e19a04f846a, type: 3}
-    shafts: []
-    active: 0
-  - key: Lithosphere
-    prefab: {fileID: 8429152693174132454, guid: c1679ed2c5123c046812fe033a23fc40, type: 3}
-    shafts: []
-    active: 0
-  - key: OuterCore
-    prefab: {fileID: 7291255043954339952, guid: ed750473bd3b4d4429d44570708136bd, type: 3}
-    shafts: []
-    active: 0
 --- !u!64 &1017101007
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7508,7 +7454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatedButton: {fileID: 1097302061}
-  destination: {fileID: 1017101006}
+  destination: {fileID: 0}
   depth: 220
 --- !u!114 &1097302061
 MonoBehaviour:
@@ -7560,7 +7506,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20914
+  m_Name: pb_Mesh21956
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7893,7 +7839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatedButton: {fileID: 1242091358}
-  destination: {fileID: 1017101006}
+  destination: {fileID: 0}
   depth: 75
 --- !u!114 &1242091358
 MonoBehaviour:
@@ -8586,7 +8532,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -4.656613e-10}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.00000011920929, y: 9.313226e-10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334030674
@@ -9031,7 +8977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatedButton: {fileID: 1422706571}
-  destination: {fileID: 1017101006}
+  destination: {fileID: 0}
   depth: 175
 --- !u!114 &1422706571
 MonoBehaviour:
@@ -9126,7 +9072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatedButton: {fileID: 1438887843}
-  destination: {fileID: 1017101006}
+  destination: {fileID: 0}
   depth: 600
 --- !u!114 &1438887843
 MonoBehaviour:
@@ -10033,7 +9979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatedButton: {fileID: 1847260545}
-  destination: {fileID: 1017101006}
+  destination: {fileID: 0}
   depth: 120
 --- !u!114 &1847260545
 MonoBehaviour:

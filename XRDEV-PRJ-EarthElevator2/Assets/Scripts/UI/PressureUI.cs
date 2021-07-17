@@ -8,8 +8,10 @@ public class PressureUI : MonoBehaviour
     public MoveElevator elevator;
     public TMP_Text pressureText;
     private float pressure;
+    public List<float> depths;
+    public List<float> pressures;
 
-    
+
     void Start()
     {
         GetPressureText();
@@ -22,7 +24,14 @@ public class PressureUI : MonoBehaviour
 
     public void GetPressureText()
     {
-        pressure = Mathf.Round(elevator.currentDepth * 1000 / 3 + 1);
-        pressureText.text = pressure + " atm";
+        for (int i = 0; i < depths.Count; i++)
+        {
+            if (elevator.currentDepth > depths[i] && elevator.currentDepth <= depths[i + 1])
+            {
+                pressure = Mathf.Round(pressures[i] + (elevator.currentDepth - depths[i]) / (depths[i + 1] - depths[i]) * (pressures[i + 1] - pressures[i]));
+            }
+        }
+
+        pressureText.text = pressure.ToString();
     }
 }

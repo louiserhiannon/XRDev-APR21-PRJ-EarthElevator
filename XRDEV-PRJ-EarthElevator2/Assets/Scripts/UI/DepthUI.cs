@@ -22,6 +22,6 @@ public class DepthUI : MonoBehaviour
     public void GetDepthText()
     {
         depth = Mathf.Round(elevator.currentDepth);
-        depthText.text = depth + " km";
+        depthText.text = depth.ToString();
     }
 }

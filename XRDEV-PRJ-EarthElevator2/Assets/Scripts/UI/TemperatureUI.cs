@@ -33,7 +33,7 @@ public class TemperatureUI : MonoBehaviour
             }
         }
 
-        tempText.text = temperature + " C";
+        tempText.text = temperature.ToString();
        
     }
 }
