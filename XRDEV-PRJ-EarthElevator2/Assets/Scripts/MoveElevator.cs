@@ -16,10 +16,10 @@ public class MoveElevator : MonoBehaviour
     public LeverAngle leverAngle;
     public float leverValue;
     private List<float> currentShaftDepths;
-    private float startPosUp = 30f;
+    private float startPosUp = 55f;
     private float startPosDown = -20f;
     private float endPosUp = -20f;
-    private float endPosDown = 30f;
+    private float endPosDown = 55f;
     //private float endPosition = -1f;
     //private float downPosBottom = -26f;
     //private float downPosMiddle = -1f;
@@ -60,6 +60,9 @@ public class MoveElevator : MonoBehaviour
         }
 
         source = GetComponent<AudioSource>();
+
+        //set max speed
+        elevatorMaxSpeed = 6f;
     }
 
     void Update()
@@ -82,11 +85,20 @@ public class MoveElevator : MonoBehaviour
             MoveElevatorUp();
         }
 
+        
+        //Set elevator max speed
+        if (currentDepth < 100f)
+        {
+            elevatorMaxSpeed = 6f;
+        }
+        else
+        {
+            elevatorMaxSpeed = 100f;
+        }
+        
         //Update speed
         leverValue = leverAngle.leverValue;
-        Debug.Log($"The lever value is {leverValue}");
         speed = leverValue * elevatorMaxSpeed;
-        Debug.Log("Speed has been set");
 
     }
 
@@ -116,37 +128,20 @@ public class MoveElevator : MonoBehaviour
 
 
         // move shaft segments (move parent transform, not segments)
+
+        
         for (int i = 0; i < activePoints.Count; i++)
         {
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
-            if (activePoints[i].transform.position.y >= endPosDown)
+            if (activePoints[i].transform.localPosition.y >= endPosDown)
             {
-                activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, startPosDown, activePoints[i].transform.position.z);
+                activePoints[i].transform.localPosition = new Vector3(activePoints[i].transform.localPosition.x, startPosDown, activePoints[i].transform.localPosition.z); ;
             }
+
+            Debug.Log(activePoints[0].transform.localPosition.y);
         }
         //cycle shaft segments
-        //if (activePoints[0].transform.position.y >= endPosition)
-        //{
-        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, downPosBottom, activePoints[2].transform.position.z);
-        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, downPosMiddle, activePoints[0].transform.position.z);
-        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, downPosTop, activePoints[1].transform.position.z);
-        //}
 
-        //if (activePoints[1].transform.position.y >= endPosition)
-        //{
-        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, downPosBottom, activePoints[0].transform.position.z);
-        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, downPosMiddle, activePoints[1].transform.position.z);
-        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, downPosTop, activePoints[2].transform.position.z);
-        //}
-
-        //if (activePoints[2].transform.position.y >= endPosition)
-        //{
-        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, downPosBottom, activePoints[1].transform.position.z);
-        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, downPosMiddle, activePoints[2].transform.position.z);
-        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, downPosTop, activePoints[0].transform.position.z);
-        //}
-
-        //update depth
         currentDepth += speed * Time.deltaTime;
 
         //stop sound when elevator stops
@@ -178,7 +173,8 @@ public class MoveElevator : MonoBehaviour
         //play elevator sound when moving
         PlayElevatorSound();
 
-        // move and cycle shaft segment (cycle parents not shafts)
+        // move shaft segments (move parent transform, not segments)
+
         for (int i = 0; i < activePoints.Count; i++)
         {
             activePoints[i].transform.Translate(0f, -speed * Time.deltaTime, 0f);
@@ -188,27 +184,7 @@ public class MoveElevator : MonoBehaviour
             }
         }
 
-        //cycle shaft segments
-        //if (activePoints[0].transform.position.y <= endPosition)
-        //{
-        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, upPosBottom, activePoints[0].transform.position.z);
-        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, upPosMiddle, activePoints[1].transform.position.z);
-        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, upPosTop, activePoints[2].transform.position.z);
-        //}
-
-        //if (activePoints[1].transform.position.y >= endPosition)
-        //{
-        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, upPosBottom, activePoints[1].transform.position.z);
-        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, upPosMiddle, activePoints[2].transform.position.z);
-        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, upPosTop, activePoints[0].transform.position.z);
-        //}
-
-        //if (activePoints[2].transform.position.y >= endPosition)
-        //{
-        //    activePoints[2].transform.position = new Vector3(activePoints[2].transform.position.x, upPosBottom, activePoints[2].transform.position.z);
-        //    activePoints[0].transform.position = new Vector3(activePoints[0].transform.position.x, upPosMiddle, activePoints[0].transform.position.z);
-        //    activePoints[1].transform.position = new Vector3(activePoints[1].transform.position.x, upPosTop, activePoints[1].transform.position.z);
-        //}
+ 
 
         //update depth
         currentDepth -= speed * Time.deltaTime;
