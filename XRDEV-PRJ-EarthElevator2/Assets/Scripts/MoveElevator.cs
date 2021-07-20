@@ -16,17 +16,10 @@ public class MoveElevator : MonoBehaviour
     public LeverAngle leverAngle;
     public float leverValue;
     private List<float> currentShaftDepths;
-    private float startPosUp = 55f;
-    private float startPosDown = -20f;
-    private float endPosUp = -20f;
-    private float endPosDown = 55f;
-    //private float endPosition = -1f;
-    //private float downPosBottom = -26f;
-    //private float downPosMiddle = -1f;
-    //private float downPosTop = 24f;
-    //private float upPosBottom = -1;
-    //private float upPosMiddle = 24;
-    //private float upPosTop = 49;
+    private float startPosUp = 95f;
+    private float startPosDown = -105f;
+    private float endPosUp = -105f;
+    private float endPosDown = 95f;
 
     //Earth Structure Variables
     public List<float> transitions;
@@ -133,12 +126,12 @@ public class MoveElevator : MonoBehaviour
         for (int i = 0; i < activePoints.Count; i++)
         {
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
-            if (activePoints[i].transform.localPosition.y >= endPosDown)
+            if (activePoints[i].transform.position.y >= endPosDown)
             {
-                activePoints[i].transform.localPosition = new Vector3(activePoints[i].transform.localPosition.x, startPosDown, activePoints[i].transform.localPosition.z); ;
+                activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, startPosDown, activePoints[i].transform.position.z); ;
             }
 
-            Debug.Log(activePoints[0].transform.localPosition.y);
+            Debug.Log(activePoints[1].transform.position.y);
         }
         //cycle shaft segments
 

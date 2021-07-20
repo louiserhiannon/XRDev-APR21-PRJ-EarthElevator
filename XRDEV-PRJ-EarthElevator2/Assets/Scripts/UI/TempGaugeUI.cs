@@ -24,7 +24,7 @@ public class TempGaugeUI : MonoBehaviour
         tempPointer.eulerAngles = new Vector3(0, 0, minTempAngle);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         GetTemperature();

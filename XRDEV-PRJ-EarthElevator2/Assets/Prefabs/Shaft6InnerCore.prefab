@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3327864805426054146
+--- !u!1 &8225725768593874895
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2751928914467844167}
-  - component: {fileID: 2924939126713837671}
-  - component: {fileID: 2737413409408424782}
-  - component: {fileID: 2048900785883403218}
-  - component: {fileID: 1071733230758265167}
+  - component: {fileID: 8294192002215394840}
+  - component: {fileID: 4158943871493293940}
+  - component: {fileID: 2379804878707242539}
+  - component: {fileID: 3129727251891813028}
+  - component: {fileID: 1391709561788339030}
+  - component: {fileID: 6910238471728579525}
   m_Layer: 0
-  m_Name: Shaft3Basalt
+  m_Name: Shaft5InnerCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2751928914467844167
+--- !u!4 &8294192002215394840
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3327864805426054146}
+  m_GameObject: {fileID: 8225725768593874895}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,13 +35,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2924939126713837671
+--- !u!114 &4158943871493293940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3327864805426054146}
+  m_GameObject: {fileID: 8225725768593874895}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
@@ -1028,13 +1029,13 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!23 &2737413409408424782
+--- !u!23 &2379804878707242539
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3327864805426054146}
+  m_GameObject: {fileID: 8225725768593874895}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1047,7 +1048,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c3b4255a4794412479b4f2158c200098, type: 2}
+  - {fileID: 2100000, guid: c1cf23aba350d9b4ba0a22511694de01, type: 2}
   - {fileID: 2100000, guid: dd94c404505f3c040867d0c5fb73a70a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1070,21 +1071,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2048900785883403218
+--- !u!33 &3129727251891813028
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3327864805426054146}
+  m_GameObject: {fileID: 8225725768593874895}
   m_Mesh: {fileID: 0}
---- !u!64 &1071733230758265167
+--- !u!64 &1391709561788339030
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3327864805426054146}
+  m_GameObject: {fileID: 8225725768593874895}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -1092,3 +1093,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &6910238471728579525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8225725768593874895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f095b503b65aa2145afe80b2f0478c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTileX: 0.3
+  minTileX: 0.1
+  maxTileY: 0.3
+  minTileY: 0.1
+  flowSpeedX: 0.1
+  flowSpeedY: 0.1
+  flowOffset: 30
+  cosTime: 0
+  textureScaleX: 0
+  textureScaleY: 0
