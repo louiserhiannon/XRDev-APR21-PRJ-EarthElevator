@@ -13,7 +13,7 @@ public class DepthGaugeUI : MonoBehaviour
     public float markerPosY;
     private float markerPosYRange;
     public float markerPosYMax = 0.60f; 
-    public float markerPosYMin = -0.62f;
+    public float markerPosYMin = -0.633f;
         
 
     void Start()

@@ -23,12 +23,12 @@ public class LocationText : MonoBehaviour
     public void GetLocationText()
     {
         depth = elevator.currentDepth;
-        if (depth <= 30f)
+        if (depth <= 50f)
         {
             locationText.text = "Crust";
         }
 
-        if(depth > 30f && depth <= 2900f)
+        if(depth > 50f && depth <= 2900f)
         {
             locationText.text = "Mantle";
         }

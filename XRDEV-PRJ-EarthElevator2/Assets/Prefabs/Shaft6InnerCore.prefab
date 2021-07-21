@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 2379804878707242539}
   - component: {fileID: 3129727251891813028}
   - component: {fileID: 1391709561788339030}
-  - component: {fileID: 6910238471728579525}
   m_Layer: 0
-  m_Name: Shaft5InnerCore
+  m_Name: Shaft6InnerCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1093,25 +1092,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &6910238471728579525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8225725768593874895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f095b503b65aa2145afe80b2f0478c30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxTileX: 0.3
-  minTileX: 0.1
-  maxTileY: 0.3
-  minTileY: 0.1
-  flowSpeedX: 0.1
-  flowSpeedY: 0.1
-  flowOffset: 30
-  cosTime: 0
-  textureScaleX: 0
-  textureScaleY: 0

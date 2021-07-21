@@ -15,9 +15,6 @@ public class MoveElevator : MonoBehaviour
     public float speed;
     public LeverAngle leverAngle;
     public float leverValue;
-    private List<float> currentShaftDepths;
-    private float startPosUp = 95f;
-    private float startPosDown = -105f;
     private float endPosUp = -105f;
     private float endPosDown = 95f;
 
@@ -128,7 +125,8 @@ public class MoveElevator : MonoBehaviour
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y >= endPosDown)
             {
-                activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, startPosDown, activePoints[i].transform.position.z); ;
+                //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y - 200 , activePoints[i].transform.position.z);
+                activePoints[i].transform.Translate(0f, -200f, 0f);
             }
 
             Debug.Log(activePoints[1].transform.position.y);
@@ -173,7 +171,8 @@ public class MoveElevator : MonoBehaviour
             activePoints[i].transform.Translate(0f, -speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y <= endPosUp)
             {
-                activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, startPosUp, activePoints[i].transform.position.z);
+                //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y + 200f, activePoints[i].transform.position.z);
+                activePoints[i].transform.Translate(0f, 200f, 0f);
             }
         }
 
