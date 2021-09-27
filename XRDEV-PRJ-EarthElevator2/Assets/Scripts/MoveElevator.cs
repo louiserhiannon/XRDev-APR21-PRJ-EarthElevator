@@ -15,8 +15,8 @@ public class MoveElevator : MonoBehaviour
     public float speed;
     public LeverAngle leverAngle;
     public float leverValue;
-    private float endPosUp = -105f;
-    private float endPosDown = 95f;
+    private float endPosUp = -30f;
+    private float endPosDown = 70f;
 
     //Earth Structure Variables
     public List<float> transitions;
@@ -83,7 +83,7 @@ public class MoveElevator : MonoBehaviour
         }
         else
         {
-            elevatorMaxSpeed = 100f;
+            elevatorMaxSpeed = 50f;
         }
         
         //Update speed
@@ -126,7 +126,7 @@ public class MoveElevator : MonoBehaviour
             if (activePoints[i].transform.position.y >= endPosDown)
             {
                 //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y - 200 , activePoints[i].transform.position.z);
-                activePoints[i].transform.Translate(0f, -200f, 0f);
+                activePoints[i].transform.Translate(0f, -100f, 0f);
             }
 
             Debug.Log(activePoints[1].transform.position.y);
@@ -172,7 +172,7 @@ public class MoveElevator : MonoBehaviour
             if (activePoints[i].transform.position.y <= endPosUp)
             {
                 //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y + 200f, activePoints[i].transform.position.z);
-                activePoints[i].transform.Translate(0f, 200f, 0f);
+                activePoints[i].transform.Translate(0f, 100f, 0f);
             }
         }
 
