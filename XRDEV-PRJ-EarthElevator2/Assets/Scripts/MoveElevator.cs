@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class MoveElevator : MonoBehaviour
 {
+
+    public CanvasManager canvasManager;
+
     public List<Transform> activePoints;
     public AudioClip elevatorSound;
     private AudioSource source;
@@ -17,12 +20,13 @@ public class MoveElevator : MonoBehaviour
     public float leverValue;
     private float endPosUp = -30f;
     private float endPosDown = 70f;
+    
 
     //Earth Structure Variables
     public List<float> transitions;
-    public float graniteGneissTransition;
-    public float gneissLithosphereTransition;
-    public float mantleCoreTransition;
+    //public float graniteGneissTransition;
+    //public float gneissLithosphereTransition;
+    //public float mantleCoreTransition;
 
 
     [System.Serializable]
@@ -53,7 +57,12 @@ public class MoveElevator : MonoBehaviour
 
         //set max speed
         elevatorMaxSpeed = 6f;
+
+        //Disable informational Canvases
+        canvasManager.DisableCanvases();
     }
+
+  
 
     void Update()
     {
@@ -116,31 +125,38 @@ public class MoveElevator : MonoBehaviour
         //play elevator sound when moving
         PlayElevatorSound();
 
+        // Disable all info canvases while moving
+        canvasManager.DisableCanvases();
 
-        // move shaft segments (move parent transform, not segments)
 
-        
+        // move and cycle shaft segments (move parent transform, not segments)
+
+
         for (int i = 0; i < activePoints.Count; i++)
         {
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y >= endPosDown)
             {
-                //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y - 200 , activePoints[i].transform.position.z);
                 activePoints[i].transform.Translate(0f, -100f, 0f);
             }
 
             Debug.Log(activePoints[1].transform.position.y);
         }
-        //cycle shaft segments
+        //UpdateDepth
 
         currentDepth += speed * Time.deltaTime;
 
-        //stop sound when elevator stops
-            if (currentDepth >= (destinationDepth - speed / 10))
+        //stop sound and activate info canvas when elevator stops
+            if (currentDepth >= (destinationDepth - 1))
         {
             StopElevatorSound();
+            Debug.Log("Sound should stop now");
+            canvasManager.DisplayCanvas();
+            Debug.Log("active Canvas should display now");
         }
     }
+
+    
 
     public void MoveElevatorUp()
     {
@@ -164,6 +180,9 @@ public class MoveElevator : MonoBehaviour
         //play elevator sound when moving
         PlayElevatorSound();
 
+        // Disable all canvases while moving
+        canvasManager.DisableCanvases();
+
         // move shaft segments (move parent transform, not segments)
 
         for (int i = 0; i < activePoints.Count; i++)
@@ -181,15 +200,20 @@ public class MoveElevator : MonoBehaviour
         //update depth
         currentDepth -= speed * Time.deltaTime;
 
-        //stop sound when elevator stops
-        if (currentDepth < (destinationDepth + speed / 10))
+        //stop sound and activate info canvas when elevator stops
+        if (currentDepth < (destinationDepth + 1))
         {
+           
             StopElevatorSound();
+
+            canvasManager.DisplayCanvas();
         }
     }
 
+    
 
-    public void PlayElevatorSound()
+
+        public void PlayElevatorSound()
     {
         source.PlayOneShot(elevatorSound, elevatorVolume);
     }

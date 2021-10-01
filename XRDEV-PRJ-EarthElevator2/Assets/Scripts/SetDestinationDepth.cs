@@ -6,7 +6,9 @@ public class SetDestinationDepth : MonoBehaviour
 {
     public ButtonAnimation animatedButton;
     public MoveElevator destination;
+    public CanvasManager canvasManager;
     public float depth;
+    public Canvas activeCanvas;
 
     void Start()
     {
@@ -16,5 +18,10 @@ public class SetDestinationDepth : MonoBehaviour
     public void SetDepth()
     {
         destination.destinationDepth = depth;
+    }
+
+    public void SetActiveCanvas()
+    {
+        canvasManager.activeCanvas = activeCanvas;
     }
 }
