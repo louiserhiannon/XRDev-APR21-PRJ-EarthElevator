@@ -15,12 +15,12 @@ C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-Ea
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64314
+49547
 Successfully changed project path to: C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2
 C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 106.23 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 1.07 ms.
+Refreshing native plugins compatible for Editor in 69.78 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.71 ms.
 Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2/Assets
@@ -31,31 +31,30 @@ Direct3D:
     Vendor:   
     VRAM:     8044 MB
     Driver:   30.0.14.7141
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001922 seconds.
+Registered in 0.001524 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 90.82 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 53.52 ms, found 10 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.723 seconds
+- Completed reload, in  1.449 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007077 seconds.
+Registered in 0.003962 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 87.67 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 59.55 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -63,7 +62,12 @@ RoslynAnalysisRunner has terminated.
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
-[XR] OVRP version 1.65.0
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -71,58 +75,237 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  1.153 seconds
+- Completed reload, in  1.011 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.15 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 3767 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 180.8 MB.
-System memory in use after: 178.4 MB.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.1 MB.
+System memory in use after: 146.6 MB.
 
-Unloading 113 unused Assets to reduce memory usage. Loaded Objects now: 4140.
-Total: 4.799400 ms (FindLiveObjects: 1.016800 ms CreateObjectMapping: 0.253700 ms MarkObjects: 2.116200 ms  DeleteObjects: 1.411500 ms)
+Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 3546.
+Total: 3.838800 ms (FindLiveObjects: 0.426100 ms CreateObjectMapping: 0.500800 ms MarkObjects: 1.816600 ms  DeleteObjects: 1.094500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/MoveElevator.cs
-  artifactKey: Guid(6b1b4e070b0c2d5429efab842b8480de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MoveElevator.cs using Guid(6b1b4e070b0c2d5429efab842b8480de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4bb24aa941315803086f10c68e6884') in 0.019280 seconds
-  Import took 0.024962 seconds .
+  path: Assets/UI/sprites/014CrustSkinny05.png
+  artifactKey: Guid(89e9f433fbe0216438b8c4d08ff4df04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/014CrustSkinny05.png using Guid(89e9f433fbe0216438b8c4d08ff4df04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25afff1f6a1abd612c2dff7832217406') in 0.088617 seconds
+  Import took 0.094192 seconds .
 
 ========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 19.64 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 105 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.3 MB.
-System memory in use after: 94.9 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 4140.
-Total: 4.250200 ms (FindLiveObjects: 0.482200 ms CreateObjectMapping: 0.172900 ms MarkObjects: 2.410400 ms  DeleteObjects: 1.183800 ms)
+Received Import Request.
+  Time since last request: 5173.676326 seconds.
+  path: Assets/Scripts/UI/VRCanvas.cs
+  artifactKey: Guid(a6f63418dba5f6d499dc01791832b80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/VRCanvas.cs using Guid(a6f63418dba5f6d499dc01791832b80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f1b2d569fe4b7787a03f4b22664567') in 0.013969 seconds
+  Import took 0.021277 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006129 seconds.
+Registered in 0.014013 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.31 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 1.20 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.946 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3030 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.1 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3557.
+Total: 4.680300 ms (FindLiveObjects: 0.457400 ms CreateObjectMapping: 0.479800 ms MarkObjects: 2.314600 ms  DeleteObjects: 1.413200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 22.967106 seconds.
+  path: Assets/Scripts/UI/UIButtonInteractable.cs
+  artifactKey: Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/UIButtonInteractable.cs using Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da3a5d89889cf91d517825c461395a9') in 0.011547 seconds
+  Import took 0.018174 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004148 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.941 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 3031 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.1 MB.
+System memory in use after: 143.7 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3562.
+Total: 4.579300 ms (FindLiveObjects: 0.683800 ms CreateObjectMapping: 0.237400 ms MarkObjects: 2.225900 ms  DeleteObjects: 1.431300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005436 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 59.51 ms, found 10 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  1.051 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 161.5 MB.
+System memory in use after: 159.0 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 4006.
+Total: 4.162300 ms (FindLiveObjects: 0.384100 ms CreateObjectMapping: 0.203700 ms MarkObjects: 2.169400 ms  DeleteObjects: 1.404200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003944 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 53.70 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  1.044 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3031 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.2 MB.
+System memory in use after: 147.8 MB.
+
+Unloading 486 unused Assets to reduce memory usage. Loaded Objects now: 3607.
+Total: 3.788100 ms (FindLiveObjects: 0.297600 ms CreateObjectMapping: 0.238400 ms MarkObjects: 1.768900 ms  DeleteObjects: 1.482500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004182 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -134,33 +317,38 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.44 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 3587 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 170.6 MB.
-System memory in use after: 168.1 MB.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3031 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.0 MB.
+System memory in use after: 144.5 MB.
 
-Unloading 108 unused Assets to reduce memory usage. Loaded Objects now: 4143.
-Total: 3.691500 ms (FindLiveObjects: 0.433700 ms CreateObjectMapping: 0.196800 ms MarkObjects: 1.769500 ms  DeleteObjects: 1.290500 ms)
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3611.
+Total: 3.883600 ms (FindLiveObjects: 0.586400 ms CreateObjectMapping: 0.251000 ms MarkObjects: 1.749000 ms  DeleteObjects: 1.296400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.573523 seconds.
+Registered in 0.004414 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -168,21 +356,532 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  6.373 seconds
+- Completed reload, in  0.925 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 3587 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 170.6 MB.
-System memory in use after: 168.2 MB.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3035 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.0 MB.
+System memory in use after: 144.6 MB.
 
-Unloading 108 unused Assets to reduce memory usage. Loaded Objects now: 4146.
-Total: 3.933300 ms (FindLiveObjects: 0.354000 ms CreateObjectMapping: 0.197300 ms MarkObjects: 2.114500 ms  DeleteObjects: 1.266700 ms)
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3618.
+Total: 4.191300 ms (FindLiveObjects: 0.359600 ms CreateObjectMapping: 0.150900 ms MarkObjects: 2.407100 ms  DeleteObjects: 1.273000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004599 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.973 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3036 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.1 MB.
+System memory in use after: 144.6 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3622.
+Total: 3.839500 ms (FindLiveObjects: 0.309200 ms CreateObjectMapping: 0.193700 ms MarkObjects: 1.913800 ms  DeleteObjects: 1.422000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005530 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.972 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3036 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.1 MB.
+System memory in use after: 144.6 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3625.
+Total: 4.354400 ms (FindLiveObjects: 0.526600 ms CreateObjectMapping: 0.343500 ms MarkObjects: 1.806000 ms  DeleteObjects: 1.677500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005114 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.989 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3036 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.1 MB.
+System memory in use after: 144.6 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3628.
+Total: 4.463900 ms (FindLiveObjects: 0.496000 ms CreateObjectMapping: 0.195600 ms MarkObjects: 2.204800 ms  DeleteObjects: 1.566300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005136 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.983 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3037 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.1 MB.
+System memory in use after: 144.7 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3632.
+Total: 4.769800 ms (FindLiveObjects: 0.693100 ms CreateObjectMapping: 0.327700 ms MarkObjects: 2.434800 ms  DeleteObjects: 1.313200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 813.412607 seconds.
+  path: Assets/Scripts/UI/UIRaycast.cs
+  artifactKey: Guid(33f8d1a79c31b3c47b18ccf71f7f8442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/UIRaycast.cs using Guid(33f8d1a79c31b3c47b18ccf71f7f8442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5608a55b4e5c862c272def1e10423e') in 0.012400 seconds
+  Import took 0.017843 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005568 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.969 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3038 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.2 MB.
+System memory in use after: 144.7 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3636.
+Total: 3.625600 ms (FindLiveObjects: 0.298600 ms CreateObjectMapping: 0.134900 ms MarkObjects: 1.971700 ms  DeleteObjects: 1.219700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004354 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.940 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3038 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.1 MB.
+System memory in use after: 144.7 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3639.
+Total: 4.318400 ms (FindLiveObjects: 0.347300 ms CreateObjectMapping: 0.168600 ms MarkObjects: 2.080000 ms  DeleteObjects: 1.721800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 473.528791 seconds.
+  path: Assets/Scripts/VRInput.cs
+  artifactKey: Guid(28e991f2aef42aa4ab67e002ca140127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/VRInput.cs using Guid(28e991f2aef42aa4ab67e002ca140127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50cea661f08e142fe514327300df7420') in 0.009191 seconds
+  Import took 0.015297 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004660 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  1.024 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3038 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.2 MB.
+System memory in use after: 144.7 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 3642.
+Total: 4.353100 ms (FindLiveObjects: 0.443200 ms CreateObjectMapping: 0.394500 ms MarkObjects: 2.221400 ms  DeleteObjects: 1.293200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1958.842877 seconds.
+  path: Assets/Scripts/UI/UIRaycast.cs
+  artifactKey: Guid(33f8d1a79c31b3c47b18ccf71f7f8442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/UIRaycast.cs using Guid(33f8d1a79c31b3c47b18ccf71f7f8442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dccd89846287d5c143c08caf2993f8') in 0.005805 seconds
+  Import took 0.010610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.079339 seconds.
+  path: Assets/Scripts/UI/UIButtonInteractable.cs
+  artifactKey: Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/UIButtonInteractable.cs using Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c8078b12494c28194551cd151c01ac') in 0.007065 seconds
+  Import took 0.012287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015114 seconds.
+  path: Assets/Scripts/UI/UIButtonInteractable.cs
+  artifactKey: Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UI/UIButtonInteractable.cs using Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c8078b12494c28194551cd151c01ac') in 0.002445 seconds
+  Import took 0.006914 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005821 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  1.112 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3049 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.2 MB.
+System memory in use after: 146.7 MB.
+
+Unloading 86 unused Assets to reduce memory usage. Loaded Objects now: 3659.
+Total: 4.597300 ms (FindLiveObjects: 0.865000 ms CreateObjectMapping: 0.306000 ms MarkObjects: 2.107800 ms  DeleteObjects: 1.316700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004836 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  0.997 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.9 MB.
+System memory in use after: 146.4 MB.
+
+Unloading 85 unused Assets to reduce memory usage. Loaded Objects now: 3662.
+Total: 3.502900 ms (FindLiveObjects: 0.327200 ms CreateObjectMapping: 0.184100 ms MarkObjects: 1.747000 ms  DeleteObjects: 1.243800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007482 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  1.019 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.0 MB.
+System memory in use after: 148.5 MB.
+
+Unloading 85 unused Assets to reduce memory usage. Loaded Objects now: 3665.
+Total: 4.613500 ms (FindLiveObjects: 0.809600 ms CreateObjectMapping: 0.243100 ms MarkObjects: 2.112400 ms  DeleteObjects: 1.446900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005203 seconds.
+Begin MonoManager ReloadAssembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
+Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
+- Completed reload, in  1.076 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 146.4 MB.
+
+Unloading 85 unused Assets to reduce memory usage. Loaded Objects now: 3668.
+Total: 4.130100 ms (FindLiveObjects: 0.395100 ms CreateObjectMapping: 0.166700 ms MarkObjects: 2.356200 ms  DeleteObjects: 1.211100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000

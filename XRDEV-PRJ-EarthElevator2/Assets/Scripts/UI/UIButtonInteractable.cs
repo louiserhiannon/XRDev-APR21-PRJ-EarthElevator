@@ -7,57 +7,33 @@ using UnityEngine.EventSystems;
 using DG.Tweening;
 using TMPro;
 
-public class UIButtonInteractable : MonoBehaviour,  IPointerEnterHandler, IPointerExitHandler //, IPointerDownHandler
+public class UIButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    //private VRInput controller;
-    //private Collider buttonCollider;
-    public CanvasManager canvasManager;
-    
-
     private float hoverStartAnimationDuration = 0.2f;
     private float hoverEndAnimationDuration = 0.1f;
-    private float scaleIconSize = 1.25f;
+    private float scaleIconSize = 1.10f;
     private Vector3 startScale;
 
-    private string AButton;
-
-
-    //private Image icon;
-    public Canvas thisCanvas;
+    private Canvas thisCanvas;
     public Canvas nextCanvas;
-    
-    public Image icon;
-    public Image textBack;
-    public TMP_Text text;
+    //private Image icon;
+    private Image textBack;
+    private TMP_Text text;
 
-    public AudioSource audioSource;
-    public AudioClip hoverSound;
-    public AudioClip selectSound;
+    public Color startTextAlpha;
+    public Color hoverTextAlpha;
+    public Color startTextBackAlpha;
+    public Color hoverTextBackAlpha;
 
-
-    //public UnityEvent OnAButtonDown;
+    public UnityEvent OnClick;
 
     private void OnEnable()
     {
         //icon = GetComponent<Image>();
-        //textBack = GetComponentInChildren<Image>();
-        //text = GetComponentInChildren<TMP_Text>();
-
-        //buttonCollider = GetComponent<Collider>();
-        //buttonCollider.isTrigger = true;
-
-        //thisCanvas = GetComponentInParent<Canvas>();
-        AButton = "RightAButton";
+        textBack = GetComponentInChildren<Image>();
+        text = GetComponentInChildren<TMP_Text>();
+        thisCanvas = GetComponent<Canvas>();
         startScale = transform.localScale;
-
-        icon.enabled = true;    
-
-        if (textBack != null)
-        {
-            textBack.enabled = false;
-            text.enabled = false;
-        }
-
     }
 
 
@@ -68,15 +44,8 @@ public class UIButtonInteractable : MonoBehaviour,  IPointerEnterHandler, IPoint
 
         // hover animations
         transform.DOScale(scaleIconSize, hoverStartAnimationDuration);
-
-        if (textBack != null)
-        {
-            textBack.enabled = true;
-            text.enabled = true;
-        }
-
-        // hover sounds
-        SoundManager.instance.PlaySound(hoverSound, audioSource);
+        text.DOColor(hoverTextAlpha, hoverStartAnimationDuration);
+        textBack.DOColor(hoverTextBackAlpha, hoverStartAnimationDuration);
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -86,43 +55,17 @@ public class UIButtonInteractable : MonoBehaviour,  IPointerEnterHandler, IPoint
 
         // exit hover animations
         transform.DOScale(startScale, hoverEndAnimationDuration);
-        if (textBack != null)
-        {
-            textBack.enabled = false;
-            text.enabled = false;
-        }
-
+        text.DOColor(startTextAlpha, hoverEndAnimationDuration);
+        textBack.DOColor(startTextBackAlpha, hoverEndAnimationDuration);
     }
 
-    public void Update()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        if (Input.GetButtonDown(AButton))
-        {
-            //UISystemProfilerApi.AddMarker("Button.onAButtonDown", this);
-
-            //OnAButtonDown?.Invoke();
-
-            canvasManager.DisableCanvases();
-            Debug.Log("Canvas should have disappeared");
-            nextCanvas.enabled = true;
-
-            //Play Select Sound
-            SoundManager.instance.PlaySound(selectSound, audioSource);
-        }
+        // need to add check to see if there is a next canvas; if not, just disable canvas
+        thisCanvas.enabled = false;
+        nextCanvas.enabled = true;
     }
-    //public void OnPointerDown(PointerEventData eventData)
-    //{
-    //    Debug.Log("Pointer has been clicked");
-        
-    //    UISystemProfilerApi.AddMarker("Button.onAButtonDown", this);
 
-    //    //Select Sound
-    //    SoundManager.instance.PlaySound(selectSound, audioSource);
-
-    //    OnAButtonDown?.Invoke();
-
-    //}
-
-
+   
 
 }    

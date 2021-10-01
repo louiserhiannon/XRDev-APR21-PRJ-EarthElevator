@@ -8,6 +8,8 @@ public class UIRaycast : MonoBehaviour
     private VRInput controller;
     private LineRenderer line;
     private Vector3 hitPosition;
+    public float smoothingFactor = 2;
+    private Vector3 smoothedEndPosition;
 
 
     // Start is called before the first frame update
@@ -28,15 +30,17 @@ public class UIRaycast : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit))
         {
-            hitPosition = hit.point;
+            //smooth the jitter
+            Vector3 targetPosition = hit.point;
+            Vector3 directionToTargetPoint = (targetPosition - hitPosition) / smoothingFactor;
+            smoothedEndPosition = hitPosition + directionToTargetPoint;
 
             //generate line
             line.SetPosition(0, transform.position);
-            line.SetPosition(1, hitPosition);
+            line.SetPosition(1, smoothedEndPosition);
 
             line.enabled = true;
         }
-
     }
 
     public void RaycastUIStop()

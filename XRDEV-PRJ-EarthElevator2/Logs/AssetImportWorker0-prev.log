@@ -15,12 +15,12 @@ C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-Ea
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59079
+64092
 Successfully changed project path to: C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2
 C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 102.76 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.60 ms.
+Refreshing native plugins compatible for Editor in 70.85 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.68 ms.
 Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2/Assets
@@ -31,31 +31,30 @@ Direct3D:
     Vendor:   
     VRAM:     8044 MB
     Driver:   30.0.14.7141
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001668 seconds.
+Registered in 0.001606 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 84.21 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 55.75 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.534 seconds
+- Completed reload, in  1.648 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006057 seconds.
+Registered in 0.004188 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 83.72 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 61.29 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -63,7 +62,12 @@ RoslynAnalysisRunner has terminated.
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
-[XR] OVRP version 1.65.0
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\looby\Documents\Unity\GitHub\XRDev-APR21-PRJ-EarthElevator\XRDEV-PRJ-EarthElevator2\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
 Mono: successfully reloaded assembly
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
@@ -71,236 +75,211 @@ Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
 Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  1.104 seconds
+- Completed reload, in  1.023 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.65 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 0.82 ms, found 10 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 3766 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 180.5 MB.
-System memory in use after: 178.0 MB.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.1 MB.
+System memory in use after: 146.6 MB.
 
-Unloading 113 unused Assets to reduce memory usage. Loaded Objects now: 4139.
-Total: 4.044900 ms (FindLiveObjects: 0.459800 ms CreateObjectMapping: 0.223100 ms MarkObjects: 2.282100 ms  DeleteObjects: 1.079000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/MoveElevator.cs
-  artifactKey: Guid(6b1b4e070b0c2d5429efab842b8480de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MoveElevator.cs using Guid(6b1b4e070b0c2d5429efab842b8480de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce7aff3ba1fe5a4837e8086be74b961') in 0.018809 seconds
-  Import took 0.024550 seconds .
+Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 3546.
+Total: 3.414800 ms (FindLiveObjects: 0.311500 ms CreateObjectMapping: 0.215500 ms MarkObjects: 1.802000 ms  DeleteObjects: 1.084900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.354685 seconds.
-  path: Assets/Scripts/UI/UIButtonInteractable.cs
-  artifactKey: Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UI/UIButtonInteractable.cs using Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7a2c41c6dc2107bd03a38b11a7617e9') in 0.001940 seconds
-  Import took 0.007450 seconds .
+  path: Assets/UI/sprites/TextBacking.png
+  artifactKey: Guid(486d3efbd97a64540b902149fdee96e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/TextBacking.png using Guid(486d3efbd97a64540b902149fdee96e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f4f579d65bc9950b5e97eb02c4fbb8') in 0.071061 seconds
+  Import took 0.075403 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 117.137754 seconds.
-  path: Assets/Scripts/UI/UIButtonInteractable.cs
-  artifactKey: Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UI/UIButtonInteractable.cs using Guid(4c9637046336d1c4aa7234081148e78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca2b21a8767cba66a86974c2c5a4606') in 0.001733 seconds
-  Import took 0.008710 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007217 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.37 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  1.070 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 3586 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 170.5 MB.
-System memory in use after: 168.1 MB.
-
-Unloading 108 unused Assets to reduce memory usage. Loaded Objects now: 4142.
-Total: 3.656100 ms (FindLiveObjects: 0.359800 ms CreateObjectMapping: 0.231100 ms MarkObjects: 1.934200 ms  DeleteObjects: 1.129800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 66.256487 seconds.
-  path: Assets/Scripts/UI/CanvasManager.cs
-  artifactKey: Guid(8ffc53b9b91de1a43abdf42b60152d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UI/CanvasManager.cs using Guid(8ffc53b9b91de1a43abdf42b60152d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9185f76ef81836cc6a7981975786aba') in 0.007755 seconds
-  Import took 0.014875 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006666 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.63 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  1.080 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.97 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 3587 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 170.6 MB.
-System memory in use after: 168.2 MB.
-
-Unloading 108 unused Assets to reduce memory usage. Loaded Objects now: 4146.
-Total: 4.561700 ms (FindLiveObjects: 0.434900 ms CreateObjectMapping: 0.291700 ms MarkObjects: 2.435700 ms  DeleteObjects: 1.398100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 270.868631 seconds.
-  path: Assets/Scripts/UI/CanvasManager.cs
-  artifactKey: Guid(8ffc53b9b91de1a43abdf42b60152d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UI/CanvasManager.cs using Guid(8ffc53b9b91de1a43abdf42b60152d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c1da36f5de363b28ca6a103b7db6ed1') in 0.006868 seconds
-  Import took 0.013042 seconds .
+  Time since last request: 480.370491 seconds.
+  path: Assets/UI/sprites/TextBacking 1.png
+  artifactKey: Guid(9d54ea58e615c3b4ba131c4b8036ac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/TextBacking 1.png using Guid(9d54ea58e615c3b4ba131c4b8036ac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d831b20c582efdabe746287c723e1e') in 0.020864 seconds
+  Import took 0.026301 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/Scripts/UI/CanvasManager.cs
-  artifactKey: Guid(8ffc53b9b91de1a43abdf42b60152d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UI/CanvasManager.cs using Guid(8ffc53b9b91de1a43abdf42b60152d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c1da36f5de363b28ca6a103b7db6ed1') in 0.001882 seconds
-  Import took 0.007777 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005977 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.34 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  1.137 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.31 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 3587 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 170.6 MB.
-System memory in use after: 168.2 MB.
-
-Unloading 108 unused Assets to reduce memory usage. Loaded Objects now: 4149.
-Total: 4.015400 ms (FindLiveObjects: 0.396200 ms CreateObjectMapping: 0.325400 ms MarkObjects: 2.014200 ms  DeleteObjects: 1.278500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 186.008946 seconds.
-  path: Assets/Sounds/Old Elevator SFX Pack
-  artifactKey: Guid(30b4d62aaa9d19c448ef11fbdbb689a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Old Elevator SFX Pack using Guid(30b4d62aaa9d19c448ef11fbdbb689a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4d575c650d4a61ea8c8935e2156b4c') in 0.010944 seconds
-  Import took 0.017611 seconds .
+  Time since last request: 8.528905 seconds.
+  path: Assets/UI/sprites/TextBacking.png
+  artifactKey: Guid(9d54ea58e615c3b4ba131c4b8036ac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/TextBacking.png using Guid(9d54ea58e615c3b4ba131c4b8036ac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1169eba4a4b952b017d06aa9142a021b') in 0.012038 seconds
+  Import took 0.017194 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002536 seconds.
-  path: Assets/Sounds/Old Elevator SFX Pack
-  artifactKey: Guid(30b4d62aaa9d19c448ef11fbdbb689a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Old Elevator SFX Pack using Guid(30b4d62aaa9d19c448ef11fbdbb689a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4d575c650d4a61ea8c8935e2156b4c') in 0.001516 seconds
-  Import took 0.006893 seconds .
+  Time since last request: 5.717427 seconds.
+  path: Assets/UI/sprites/TextBacking.png
+  artifactKey: Guid(9d54ea58e615c3b4ba131c4b8036ac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/TextBacking.png using Guid(9d54ea58e615c3b4ba131c4b8036ac41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe9239b7fbfef787b13bdbe88c73aed') in 0.031791 seconds
+  Import took 0.036621 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006387 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.25 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl.dll
-Fallback handler could not load library C:/Program Files/Unity/2020.3.2f1/Editor/Data/Mono/lib/libdl
-- Completed reload, in  1.117 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 3587 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 170.7 MB.
-System memory in use after: 168.3 MB.
+Received Import Request.
+  Time since last request: 1683.021997 seconds.
+  path: Assets/UI/sprites/011CrustSkinny01.png
+  artifactKey: Guid(783ad9884111a764b8991ee33d241f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/011CrustSkinny01.png using Guid(783ad9884111a764b8991ee33d241f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8bac181180317adfc5804e43eeaf50b') in 0.021240 seconds
+  Import took 0.027016 seconds .
 
-Unloading 108 unused Assets to reduce memory usage. Loaded Objects now: 4152.
-Total: 4.051600 ms (FindLiveObjects: 0.379800 ms CreateObjectMapping: 0.294100 ms MarkObjects: 2.096000 ms  DeleteObjects: 1.280700 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 4.846790 seconds.
+  path: Assets/UI/sprites/011CrustSkinny01.png
+  artifactKey: Guid(783ad9884111a764b8991ee33d241f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/011CrustSkinny01.png using Guid(783ad9884111a764b8991ee33d241f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7ea521c2eb82f9a41b7af5b5e33e9d') in 0.023845 seconds
+  Import took 0.028376 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 2.842348 seconds.
+  path: Assets/UI/sprites/ButtonHome.png
+  artifactKey: Guid(4642570b9dce5b948853421f46035d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonHome.png using Guid(4642570b9dce5b948853421f46035d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292c5ba0a29d19c2084853238be17be8') in 0.012885 seconds
+  Import took 0.018003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.866299 seconds.
+  path: Assets/UI/sprites/ButtonHome.png
+  artifactKey: Guid(4642570b9dce5b948853421f46035d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonHome.png using Guid(4642570b9dce5b948853421f46035d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3dbfbd96ea1259c0580299b3e8e35ce') in 0.015865 seconds
+  Import took 0.020286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.822129 seconds.
+  path: Assets/UI/sprites/ButtonNext.png
+  artifactKey: Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonNext.png using Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772da7b09dfae905a695784a12bbc091') in 0.018006 seconds
+  Import took 0.022272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.345155 seconds.
+  path: Assets/UI/sprites/ButtonNext.png
+  artifactKey: Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonNext.png using Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df857240e38175607d67e9292343290c') in 0.031523 seconds
+  Import took 0.036114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.360296 seconds.
+  path: Assets/UI/sprites/ButtonPrev.png
+  artifactKey: Guid(b10e09b8f419d4943a4d86b639493c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonPrev.png using Guid(b10e09b8f419d4943a4d86b639493c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0609f1f7e96e6602bd8b7c87fa85fb8f') in 0.009306 seconds
+  Import took 0.013740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.531646 seconds.
+  path: Assets/UI/sprites/ButtonPrev.png
+  artifactKey: Guid(b10e09b8f419d4943a4d86b639493c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonPrev.png using Guid(b10e09b8f419d4943a4d86b639493c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4335010d2ef3f8f72905f3a9a386776') in 0.020056 seconds
+  Import took 0.024696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 560.383596 seconds.
+  path: Assets/UI/sprites/ButtonNext.png
+  artifactKey: Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonNext.png using Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f50ee660173d6c692e90cbce35cc9a') in 0.009876 seconds
+  Import took 0.015000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/UI/sprites/ButtonNext.png
+  artifactKey: Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonNext.png using Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f50ee660173d6c692e90cbce35cc9a') in 0.005506 seconds
+  Import took 0.009861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.085506 seconds.
+  path: Assets/UI/sprites/ButtonNext.png
+  artifactKey: Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonNext.png using Guid(85378eedee8d03243939e28854ccb7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc450b5a28684ff8dc60d526dbca428') in 0.032522 seconds
+  Import took 0.036974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.277449 seconds.
+  path: Assets/UI/sprites/ButtonPrev.png
+  artifactKey: Guid(b10e09b8f419d4943a4d86b639493c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonPrev.png using Guid(b10e09b8f419d4943a4d86b639493c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54c310913856ec63a2e32cbcb83a0a3') in 0.017512 seconds
+  Import took 0.021932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.428640 seconds.
+  path: Assets/UI/sprites/ButtonPrev.png
+  artifactKey: Guid(b10e09b8f419d4943a4d86b639493c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonPrev.png using Guid(b10e09b8f419d4943a4d86b639493c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37dc13d036014f7bad7d2c24c611428b') in 0.013834 seconds
+  Import took 0.018396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.887553 seconds.
+  path: Assets/UI/sprites/ButtonHome.png
+  artifactKey: Guid(4642570b9dce5b948853421f46035d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonHome.png using Guid(4642570b9dce5b948853421f46035d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace41d14f6d05073cf8158650b82e053') in 0.018771 seconds
+  Import took 0.023837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.580562 seconds.
+  path: Assets/UI/sprites/ButtonHome.png
+  artifactKey: Guid(4642570b9dce5b948853421f46035d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/ButtonHome.png using Guid(4642570b9dce5b948853421f46035d53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0350dc995c822b17e4226b08a1a49e2') in 0.026271 seconds
+  Import took 0.030662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 183.738768 seconds.
+  path: Assets/UI/sprites/012CrustSkinny02.png
+  artifactKey: Guid(637b5dcea00c86f429a92cbee73b3548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/012CrustSkinny02.png using Guid(637b5dcea00c86f429a92cbee73b3548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8876fbabd05bec617e2d527ed4620bc7') in 0.025091 seconds
+  Import took 0.029918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/UI/sprites/012CrustSkinny02.png
+  artifactKey: Guid(637b5dcea00c86f429a92cbee73b3548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/012CrustSkinny02.png using Guid(637b5dcea00c86f429a92cbee73b3548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8876fbabd05bec617e2d527ed4620bc7') in 0.020885 seconds
+  Import took 0.026044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.126517 seconds.
+  path: Assets/UI/sprites/012CrustSkinny02.png
+  artifactKey: Guid(637b5dcea00c86f429a92cbee73b3548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/012CrustSkinny02.png using Guid(637b5dcea00c86f429a92cbee73b3548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b42e54e6df2553ed898c4418b833e104') in 0.038118 seconds
+  Import took 0.042886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2108.237880 seconds.
+  path: Assets/UI/sprites/013CrustSkinny03.png
+  artifactKey: Guid(2f1fdf12499c23e4780d01089d314656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/013CrustSkinny03.png using Guid(2f1fdf12499c23e4780d01089d314656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2af356d343776c3b4865b13d1370dfb') in 0.017458 seconds
+  Import took 0.023244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.163125 seconds.
+  path: Assets/UI/sprites/013CrustSkinny03.png
+  artifactKey: Guid(2f1fdf12499c23e4780d01089d314656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/sprites/013CrustSkinny03.png using Guid(2f1fdf12499c23e4780d01089d314656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442b4bb049436b48df77be6b6bba2860') in 0.041414 seconds
+  Import took 0.045956 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
