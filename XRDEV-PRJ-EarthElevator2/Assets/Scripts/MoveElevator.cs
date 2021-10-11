@@ -1,13 +1,8 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveElevator : MonoBehaviour
 {
-
-    public CanvasManager canvasManager;
-
     public List<Transform> activePoints;
     public AudioClip elevatorSound;
     private AudioSource source;
@@ -19,14 +14,13 @@ public class MoveElevator : MonoBehaviour
     public LeverAngle leverAngle;
     public float leverValue;
     private float endPosUp = -30f;
-    private float endPosDown = 70f;
-    
+    private float endPosDown = 120f;
+    public Canvas activeCanvas;
+    public GameObject infoUI;
 
     //Earth Structure Variables
     public List<float> transitions;
-    //public float graniteGneissTransition;
-    //public float gneissLithosphereTransition;
-    //public float mantleCoreTransition;
+    
 
 
     [System.Serializable]
@@ -39,7 +33,7 @@ public class MoveElevator : MonoBehaviour
     }
 
     public List<Layer> layers;
-    
+
 
     void Start()
     {
@@ -58,17 +52,16 @@ public class MoveElevator : MonoBehaviour
         //set max speed
         elevatorMaxSpeed = 6f;
 
-        //Disable informational Canvases
-        canvasManager.DisableCanvases();
-    }
+        //Disable informational canvases
 
-  
+        DisableCanvases();
+    }
 
     void Update()
     {
 
-       // Determine movement direction based on destination depth and current depth
-                // if elevator is 'above' the target depth
+        // Determine movement direction based on destination depth and current depth
+        // if elevator is 'above' the target depth
         if (destinationDepth > (currentDepth + 1)) // + 1 added to stop it calling MoveElevatorDown() when it's just going to get held up by the next set of if statements
         {
             // move elevator down
@@ -76,7 +69,7 @@ public class MoveElevator : MonoBehaviour
             MoveElevatorDown();
         }
 
-            // if elevator is 'below' the target depth
+        // if elevator is 'below' the target depth
         if (destinationDepth < (currentDepth - 1)) // - 1 added to stop it calling MoveElevatorUp() when it's just going to get held up by the next set of if statements
         {
             // move elevator up
@@ -84,7 +77,7 @@ public class MoveElevator : MonoBehaviour
             MoveElevatorUp();
         }
 
-        
+
         //Set elevator max speed
         if (currentDepth < 100f)
         {
@@ -94,7 +87,7 @@ public class MoveElevator : MonoBehaviour
         {
             elevatorMaxSpeed = 50f;
         }
-        
+
         //Update speed
         leverValue = leverAngle.leverValue;
         speed = leverValue * elevatorMaxSpeed;
@@ -103,7 +96,7 @@ public class MoveElevator : MonoBehaviour
 
     public void MoveElevatorDown()
     {
-              
+
 
         //Activate correct shaft sections
         for (int i = 0; i < transitions.Count; i++)
@@ -117,7 +110,7 @@ public class MoveElevator : MonoBehaviour
                         layers[k].shafts[j].SetActive(false);
                     }
 
-                    layers[i+1].shafts[j].SetActive(true);
+                    layers[i + 1].shafts[j].SetActive(true);
                 }
             }
         }
@@ -125,11 +118,7 @@ public class MoveElevator : MonoBehaviour
         //play elevator sound when moving
         PlayElevatorSound();
 
-        // Disable all info canvases while moving
-        canvasManager.DisableCanvases();
-
-
-        // move and cycle shaft segments (move parent transform, not segments)
+        // move shaft segments (move parent transform, not segments)
 
 
         for (int i = 0; i < activePoints.Count; i++)
@@ -137,26 +126,23 @@ public class MoveElevator : MonoBehaviour
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y >= endPosDown)
             {
-                activePoints[i].transform.Translate(0f, -100f, 0f);
+                //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y - 200 , activePoints[i].transform.position.z);
+                activePoints[i].transform.Translate(0f, -150f, 0f);
             }
 
             Debug.Log(activePoints[1].transform.position.y);
         }
-        //UpdateDepth
+        //cycle shaft segments
 
         currentDepth += speed * Time.deltaTime;
 
-        //stop sound and activate info canvas when elevator stops
-            if (currentDepth >= (destinationDepth - 1))
+        //stop sound when elevator stops
+        if (currentDepth > (destinationDepth - 1))
         {
             StopElevatorSound();
-            Debug.Log("Sound should stop now");
-            canvasManager.DisplayCanvas();
-            Debug.Log("active Canvas should display now");
+            DisplayActiveCanvas();
         }
     }
-
-    
 
     public void MoveElevatorUp()
     {
@@ -180,8 +166,8 @@ public class MoveElevator : MonoBehaviour
         //play elevator sound when moving
         PlayElevatorSound();
 
-        // Disable all canvases while moving
-        canvasManager.DisableCanvases();
+        //disable all active canvases when moving
+        //DisableCanvases();
 
         // move shaft segments (move parent transform, not segments)
 
@@ -191,29 +177,25 @@ public class MoveElevator : MonoBehaviour
             if (activePoints[i].transform.position.y <= endPosUp)
             {
                 //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y + 200f, activePoints[i].transform.position.z);
-                activePoints[i].transform.Translate(0f, 100f, 0f);
+                activePoints[i].transform.Translate(0f, 150f, 0f);
             }
         }
 
- 
+
 
         //update depth
         currentDepth -= speed * Time.deltaTime;
 
-        //stop sound and activate info canvas when elevator stops
+        //stop sound when elevator stops
         if (currentDepth < (destinationDepth + 1))
         {
-           
             StopElevatorSound();
-
-            canvasManager.DisplayCanvas();
+            DisplayActiveCanvas();
         }
     }
 
-    
 
-
-        public void PlayElevatorSound()
+    public void PlayElevatorSound()
     {
         source.PlayOneShot(elevatorSound, elevatorVolume);
     }
@@ -221,5 +203,18 @@ public class MoveElevator : MonoBehaviour
     private void StopElevatorSound()
     {
         source.Stop();
+    }
+
+    public void DisableCanvases()
+    {
+        foreach (Canvas canvas in infoUI.GetComponentsInChildren<Canvas>())
+        {
+            canvas.enabled = false;
+        }
+    }
+
+    public void DisplayActiveCanvas()
+    {
+        activeCanvas.enabled = true;
     }
 }
