@@ -11,7 +11,7 @@ public class UIButtonInteractable : MonoBehaviour,  IPointerEnterHandler, IPoint
 {
     //private VRInput controller;
     //private Collider buttonCollider;
-    public CanvasManager canvasManager;
+    //public CanvasManager canvasManager;
     
 
     private float hoverStartAnimationDuration = 0.2f;
@@ -25,7 +25,8 @@ public class UIButtonInteractable : MonoBehaviour,  IPointerEnterHandler, IPoint
     //private Image icon;
     public Canvas thisCanvas;
     public Canvas nextCanvas;
-    
+
+    public GameObject infoUI;
     public Image icon;
     public Image textBack;
     public TMP_Text text;
@@ -102,8 +103,12 @@ public class UIButtonInteractable : MonoBehaviour,  IPointerEnterHandler, IPoint
 
             //OnAButtonDown?.Invoke();
 
-            canvasManager.DisableCanvases();
-            Debug.Log("Canvas should have disappeared");
+            foreach (Canvas canvas in infoUI.GetComponentsInChildren<Canvas>())
+            {
+                canvas.enabled = false;
+                Debug.Log("Canvas should have disappeared");
+            }
+            
             nextCanvas.enabled = true;
 
             //Play Select Sound

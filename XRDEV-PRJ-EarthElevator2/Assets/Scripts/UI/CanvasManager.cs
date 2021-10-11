@@ -13,6 +13,7 @@ public class CanvasManager : MonoBehaviour
         foreach (Canvas canvas in infoUI.GetComponentsInChildren<Canvas>())
         {
             canvas.enabled = false;
+
         }
 
 

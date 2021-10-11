@@ -6,7 +6,7 @@ using UnityEngine;
 public class MoveElevator : MonoBehaviour
 {
 
-    public CanvasManager canvasManager;
+    //public CanvasManager canvasManager;
 
     public List<Transform> activePoints;
     public AudioClip elevatorSound;
@@ -16,10 +16,13 @@ public class MoveElevator : MonoBehaviour
     public float currentDepth;
     public float elevatorMaxSpeed;
     public float speed;
+    //private float blackholeHeight = 125f;
     public LeverAngle leverAngle;
     public float leverValue;
     private float endPosUp = -30f;
-    private float endPosDown = 70f;
+    private float endPosDown = 120f;
+    public Canvas activeCanvas;
+    public GameObject infoUI;
     
 
     //Earth Structure Variables
@@ -39,6 +42,7 @@ public class MoveElevator : MonoBehaviour
     }
 
     public List<Layer> layers;
+    public GameObject sky;
     
 
     void Start()
@@ -59,7 +63,7 @@ public class MoveElevator : MonoBehaviour
         elevatorMaxSpeed = 6f;
 
         //Disable informational Canvases
-        canvasManager.DisableCanvases();
+        DisableCanvases();
     }
 
   
@@ -126,7 +130,7 @@ public class MoveElevator : MonoBehaviour
         PlayElevatorSound();
 
         // Disable all info canvases while moving
-        canvasManager.DisableCanvases();
+        DisableCanvases();
 
 
         // move and cycle shaft segments (move parent transform, not segments)
@@ -137,7 +141,7 @@ public class MoveElevator : MonoBehaviour
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y >= endPosDown)
             {
-                activePoints[i].transform.Translate(0f, -100f, 0f);
+                activePoints[i].transform.Translate(0f, -150f, 0f);
             }
 
             Debug.Log(activePoints[1].transform.position.y);
@@ -146,12 +150,18 @@ public class MoveElevator : MonoBehaviour
 
         currentDepth += speed * Time.deltaTime;
 
+        ////move sky
+        //if (currentDepth < blackholeHeight)
+        //{
+        //    sky.transform.Translate(0f, speed * Time.deltaTime, 0f);
+        //}
+
         //stop sound and activate info canvas when elevator stops
             if (currentDepth >= (destinationDepth - 1))
         {
             StopElevatorSound();
             Debug.Log("Sound should stop now");
-            canvasManager.DisplayCanvas();
+            DisplayCanvas();
             Debug.Log("active Canvas should display now");
         }
     }
@@ -181,7 +191,7 @@ public class MoveElevator : MonoBehaviour
         PlayElevatorSound();
 
         // Disable all canvases while moving
-        canvasManager.DisableCanvases();
+        DisableCanvases();
 
         // move shaft segments (move parent transform, not segments)
 
@@ -191,7 +201,7 @@ public class MoveElevator : MonoBehaviour
             if (activePoints[i].transform.position.y <= endPosUp)
             {
                 //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y + 200f, activePoints[i].transform.position.z);
-                activePoints[i].transform.Translate(0f, 100f, 0f);
+                activePoints[i].transform.Translate(0f, 150f, 0f);
             }
         }
 
@@ -206,14 +216,31 @@ public class MoveElevator : MonoBehaviour
            
             StopElevatorSound();
 
-            canvasManager.DisplayCanvas();
+            DisplayCanvas();
         }
     }
 
-    
+
+    public void DisableCanvases()
+    {
+        foreach (Canvas canvas in infoUI.GetComponentsInChildren<Canvas>())
+        {
+            canvas.enabled = false;
+
+        }
 
 
-        public void PlayElevatorSound()
+    }
+
+    public void DisplayCanvas()
+    {
+        //Activate Correct Canvas
+
+        activeCanvas.enabled = true;
+
+    }
+
+    public void PlayElevatorSound()
     {
         source.PlayOneShot(elevatorSound, elevatorVolume);
     }
