@@ -7,23 +7,29 @@ public class SetDestinationDepth : MonoBehaviour
     public ButtonAnimation animatedButton;
     public MoveElevator destination;
     public float depth;
+    public GameObject infoUI;
     public Canvas activeCanvas;
 
     void Start()
     {
-       animatedButton.OnButtonPressed += SetDepth;
-       //animatedButton.OnButtonPressed += SetActiveCanvas;
+        animatedButton.OnButtonPressed += SetDepth;
     }
 
     public void SetDepth()
     {
         destination.destinationDepth = depth;
-        destination.activeCanvas = activeCanvas;
 
+        foreach (Canvas canvas in infoUI.GetComponentsInChildren<Canvas>())
+        {
+            canvas.enabled = false;
+        }
+
+        destination.activeCanvas = activeCanvas;
     }
 
-    //public void SetActiveCanvas()
+    //public void SetActiveCanva()
     //{
-    //    canvasManager.activeCanvas = activeCanvas;
+    //    destination.activeCanvas = activeCanvas;
     //}
+
 }
