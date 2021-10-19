@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 using DG.Tweening;
 using TMPro;
 
-public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler //, IPointerDownHandler
+public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     
     private float hoverStartAnimationDuration = 0.2f;
@@ -15,12 +15,12 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
     private float scaleIconSize = 1.25f;
     private Vector3 startScale;
 
-    private string AButton;
+   //private string AButton;
 
-    public Canvas thisCanvas;
+    public Canvas infoUI; 
     //public Canvas nextCanvas;
 
-    public GameObject infoUI;
+    public GameObject nextPanel;
     public Image icon;
     public Image textBack;
     public TMP_Text text;
@@ -35,7 +35,7 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
     private void OnEnable()
     {
         
-        AButton = "RightAButton";
+        //AButton = "RightAButton";
         startScale = transform.localScale;
 
         icon.enabled = true;
@@ -72,27 +72,78 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
         
     }
 
-    public void Update()
+    //public void Update()
+    //{
+    //    if (Input.GetButtonDown(AButton))
+    //    {
+    //        //UISystemProfilerApi.AddMarker("Button.onAButtonDown", this);
+
+    //        //OnAButtonDown?.Invoke();
+
+    //        //Disable all UI elements
+
+    //        foreach (Button button in infoUI.GetComponentsInChildren<Button>())
+    //        {
+    //            button.enabled = false;
+    //            Debug.Log("All buttons should have disappeared");
+    //        }
+
+    //        foreach (Image image in infoUI.GetComponentsInChildren<Image>())
+    //        {
+    //            image.enabled = false;
+    //            Debug.Log("All images should have disappeared");
+    //        }
+
+    //        //enable required UI elements
+
+    //        foreach (Button button in nextPanel.GetComponentsInChildren<Button>())
+    //        {
+    //            button.enabled = true;
+    //            Debug.Log("Active panel buttons should have appeared");
+    //        }
+
+    //        foreach (Image image in nextPanel.GetComponentsInChildren<Image>())
+    //        {
+    //            image.enabled = true;
+    //            Debug.Log("Active panel buttons should have appeared");
+    //        }
+
+    //        //Play Select Sound
+    //        SoundManager.instance.PlaySound(selectSound, audioSource);
+    //    }
+    //}
+
+    public void OnPointerClick(PointerEventData eventData)
     {
-        if (Input.GetButtonDown(AButton))
+        //Disable all UI elements
+
+        foreach (Button button in infoUI.GetComponentsInChildren<Button>())
         {
-            //UISystemProfilerApi.AddMarker("Button.onAButtonDown", this);
-
-            //OnAButtonDown?.Invoke();
-
-            foreach (Canvas canvas in infoUI.GetComponentsInChildren<Canvas>())
-            {
-                canvas.enabled = false;
-                Debug.Log("Canvas should have disappeared");
-            }
-
-            //nextCanvas.enabled = true;
-
-            //Play Select Sound
-            SoundManager.instance.PlaySound(selectSound, audioSource);
+            button.enabled = false;
+            Debug.Log("All buttons should have disappeared");
         }
+
+        foreach (Image image in infoUI.GetComponentsInChildren<Image>())
+        {
+            image.enabled = false;
+            Debug.Log("All images should have disappeared");
+        }
+
+        //enable required UI elements
+
+        foreach (Button button in nextPanel.GetComponentsInChildren<Button>())
+        {
+            button.enabled = true;
+            Debug.Log("Active panel buttons should have appeared");
+        }
+
+        foreach (Image image in nextPanel.GetComponentsInChildren<Image>())
+        {
+            image.enabled = true;
+            Debug.Log("Active panel buttons should have appeared");
+        }
+
+        //Play Select Sound
+        SoundManager.instance.PlaySound(selectSound, audioSource);
     }
-
-
-
 }

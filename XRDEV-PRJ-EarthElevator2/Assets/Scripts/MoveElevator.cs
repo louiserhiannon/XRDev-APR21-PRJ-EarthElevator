@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveElevator : MonoBehaviour
 {
@@ -15,8 +16,8 @@ public class MoveElevator : MonoBehaviour
     public float leverValue;
     private float endPosUp = -30f;
     private float endPosDown = 120f;
-    public Canvas activeCanvas;
-    public GameObject infoUI;
+    public GameObject activePanel;
+    public Canvas infoUI;
 
     //Earth Structure Variables
     public List<float> transitions;
@@ -54,7 +55,7 @@ public class MoveElevator : MonoBehaviour
 
         //Disable informational canvases
 
-        DisableCanvases();
+        DisablePanels();
     }
 
     void Update()
@@ -140,7 +141,7 @@ public class MoveElevator : MonoBehaviour
         if (currentDepth > (destinationDepth - 1))
         {
             StopElevatorSound();
-            DisplayActiveCanvas();
+            DisplayActivePanel();
         }
     }
 
@@ -190,7 +191,7 @@ public class MoveElevator : MonoBehaviour
         if (currentDepth < (destinationDepth + 1))
         {
             StopElevatorSound();
-            DisplayActiveCanvas();
+            DisplayActivePanel();
         }
     }
 
@@ -205,16 +206,35 @@ public class MoveElevator : MonoBehaviour
         source.Stop();
     }
 
-    public void DisableCanvases()
+    public void DisablePanels()
     {
-        foreach (Canvas canvas in infoUI.GetComponentsInChildren<Canvas>())
+        foreach (Image image in infoUI.GetComponentsInChildren<Image>())
         {
-            canvas.enabled = false;
+            image.enabled = false;
+        }
+
+        foreach (Button button in infoUI.GetComponentsInChildren<Button>())
+        {
+            button.enabled = false;
         }
     }
 
-    public void DisplayActiveCanvas()
+    public void DisplayActivePanel()
     {
-        activeCanvas.enabled = true;
+        foreach (Image image in activePanel.GetComponentsInChildren<Image>())
+        {
+            if (image.tag == "ButtonImage")
+            {
+                image.enabled = true;
+                Debug.Log("Active panel buttons should have appeared");
+            }
+                
+        }
+
+        foreach (Button button in activePanel.GetComponentsInChildren<Button>())
+        {
+            button.enabled = true;
+            Debug.Log("Active panel buttons should have appeared");
+        }
     }
 }
