@@ -8,7 +8,7 @@ public class SetDestinationUI : MonoBehaviour
     public ButtonAnimation animatedButton;
     public MoveElevator destination;
     public Canvas infoUI;
-    public GameObject activePanel;
+    public CanvasGroup activePanel;
 
     void Start()
     {
@@ -17,22 +17,14 @@ public class SetDestinationUI : MonoBehaviour
 
     public void SetUI()
     {
-        foreach (Image image in infoUI.GetComponentsInChildren<Image>())
+        foreach (CanvasGroup panel in infoUI.GetComponentsInChildren<CanvasGroup>())
         {
-            image.enabled = false;
+            panel.alpha = 0;
+            panel.interactable = false;
+            panel.blocksRaycasts = false;
         }
 
-        foreach (Button button in infoUI.GetComponentsInChildren<Button>())
-        {
-            button.enabled = false;
-        }
-
-        destination.activePanel = activePanel;
+                destination.activePanel = activePanel;
     }
-
-    //public void SetActiveCanva()
-    //{
-    //    destination.activeCanvas = activeCanvas;
-    //}
 
 }

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MoveElevator : MonoBehaviour
 {
@@ -16,8 +17,9 @@ public class MoveElevator : MonoBehaviour
     public float leverValue;
     private float endPosUp = -30f;
     private float endPosDown = 120f;
-    public GameObject activePanel;
     public Canvas infoUI;
+    public CanvasGroup activePanel;
+
 
     //Earth Structure Variables
     public List<float> transitions;
@@ -208,33 +210,43 @@ public class MoveElevator : MonoBehaviour
 
     public void DisablePanels()
     {
-        foreach (Image image in infoUI.GetComponentsInChildren<Image>())
+        foreach (CanvasGroup panel in infoUI.GetComponentsInChildren<CanvasGroup>())
         {
-            image.enabled = false;
+            panel.alpha = 0;
+            panel.interactable = false;
+            panel.blocksRaycasts = false;
         }
 
-        foreach (Button button in infoUI.GetComponentsInChildren<Button>())
-        {
-            button.enabled = false;
-        }
     }
 
     public void DisplayActivePanel()
     {
+        //Turn up alpha on active panel
+
+        activePanel.alpha = 1;
+        activePanel.interactable = true;
+        activePanel.blocksRaycasts = true;
+
+        //Hide anything that shouldn't be there
+        
         foreach (Image image in activePanel.GetComponentsInChildren<Image>())
         {
-            if (image.tag == "ButtonImage")
+            if (image.tag == "Hidden")
             {
-                image.enabled = true;
-                Debug.Log("Active panel buttons should have appeared");
+                image.enabled = false;
+                Debug.Log("Text backing should disappear");
             }
                 
         }
 
-        foreach (Button button in activePanel.GetComponentsInChildren<Button>())
+        foreach (TMP_Text text in activePanel.GetComponentsInChildren<TMP_Text>())
         {
-            button.enabled = true;
-            Debug.Log("Active panel buttons should have appeared");
+            if(text.tag == "Hidden")
+            {
+                text.enabled = false;
+                Debug.Log("Text should disappear");
+            }
+                      
         }
     }
 }

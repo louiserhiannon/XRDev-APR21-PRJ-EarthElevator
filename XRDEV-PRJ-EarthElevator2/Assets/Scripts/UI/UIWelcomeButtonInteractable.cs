@@ -7,43 +7,52 @@ using UnityEngine.EventSystems;
 using DG.Tweening;
 using TMPro;
 
-public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler//, IPointerClickHandler
 {
-    
     private float hoverStartAnimationDuration = 0.2f;
     private float hoverEndAnimationDuration = 0.1f;
     private float scaleIconSize = 1.25f;
     private Vector3 startScale;
 
-   //private string AButton;
+    public Canvas infoUI;
 
-    public Canvas infoUI; 
-    //public Canvas nextCanvas;
-
-    public GameObject nextPanel;
+ 
     public Image icon;
     public Image textBack;
     public TMP_Text text;
 
+    //private bool hitButton;
+
     public AudioSource audioSource;
     public AudioClip hoverSound;
-    public AudioClip selectSound;
+    //public AudioClip selectSound;
 
-
+    //private VRInput controller;
     //public UnityEvent OnAButtonDown;
+
+    public UINavigation nav;
+    public CanvasGroup thisPanel;
+    public CanvasGroup nextPanel;
 
     private void OnEnable()
     {
-        
-        //AButton = "RightAButton";
+
         startScale = transform.localScale;
 
         icon.enabled = true;
         textBack.enabled = false;
         text.enabled = false;
-        
+        //hitButton = false;     
+
     }
 
+    //public void Update()
+    //{
+    //    if (Input.GetButtonDown("RightAButton"))
+    //    {
+    //        PanelSwitch();
+    //    }
+    //}
 
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -58,6 +67,11 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
         
         // hover sounds
         SoundManager.instance.PlaySound(hoverSound, audioSource);
+
+        //make button 'selectable' by assigning active panels from UINavigation
+        nav.thisPanelActive = thisPanel;
+        nav.nextPanelActive = nextPanel;
+
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -69,81 +83,33 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
         transform.DOScale(startScale, hoverEndAnimationDuration);
         textBack.enabled = false;
         text.enabled = false;
-        
+
+        //make button 'unselectable' by removing active panels from UINavigation
+        nav.thisPanelActive = null;
+        nav.nextPanelActive = null;
     }
 
-    //public void Update()
+
+    //public void PanelSwitch()
     //{
-    //    if (Input.GetButtonDown(AButton))
+    //    if(hitButton == true)
     //    {
-    //        //UISystemProfilerApi.AddMarker("Button.onAButtonDown", this);
-
-    //        //OnAButtonDown?.Invoke();
-
-    //        //Disable all UI elements
-
-    //        foreach (Button button in infoUI.GetComponentsInChildren<Button>())
-    //        {
-    //            button.enabled = false;
-    //            Debug.Log("All buttons should have disappeared");
-    //        }
-
-    //        foreach (Image image in infoUI.GetComponentsInChildren<Image>())
-    //        {
-    //            image.enabled = false;
-    //            Debug.Log("All images should have disappeared");
-    //        }
-
-    //        //enable required UI elements
-
-    //        foreach (Button button in nextPanel.GetComponentsInChildren<Button>())
-    //        {
-    //            button.enabled = true;
-    //            Debug.Log("Active panel buttons should have appeared");
-    //        }
-
-    //        foreach (Image image in nextPanel.GetComponentsInChildren<Image>())
-    //        {
-    //            image.enabled = true;
-    //            Debug.Log("Active panel buttons should have appeared");
-    //        }
-
-    //        //Play Select Sound
+    //        //play select sound
     //        SoundManager.instance.PlaySound(selectSound, audioSource);
+                                 
     //    }
+
+
+        //thispanel.alpha = 0;
+        //thispanel.interactable = false;
+        //thispanel.blocksraycasts = false;
+
+        //nextpanel.alpha = 0;
+        //nextpanel.interactable = true;
+        //nextpanel.blocksraycasts = true;
+
+
+
+
     //}
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        //Disable all UI elements
-
-        foreach (Button button in infoUI.GetComponentsInChildren<Button>())
-        {
-            button.enabled = false;
-            Debug.Log("All buttons should have disappeared");
-        }
-
-        foreach (Image image in infoUI.GetComponentsInChildren<Image>())
-        {
-            image.enabled = false;
-            Debug.Log("All images should have disappeared");
-        }
-
-        //enable required UI elements
-
-        foreach (Button button in nextPanel.GetComponentsInChildren<Button>())
-        {
-            button.enabled = true;
-            Debug.Log("Active panel buttons should have appeared");
-        }
-
-        foreach (Image image in nextPanel.GetComponentsInChildren<Image>())
-        {
-            image.enabled = true;
-            Debug.Log("Active panel buttons should have appeared");
-        }
-
-        //Play Select Sound
-        SoundManager.instance.PlaySound(selectSound, audioSource);
-    }
 }
