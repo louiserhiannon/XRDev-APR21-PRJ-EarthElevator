@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 using DG.Tweening;
 using TMPro;
 
-public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler//, IPointerClickHandler
+public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private float hoverStartAnimationDuration = 0.2f;
     private float hoverEndAnimationDuration = 0.1f;
@@ -15,21 +15,13 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
     private Vector3 startScale;
 
     public Canvas infoUI;
-
- 
     public Image icon;
     public Image textBack;
     public TMP_Text text;
 
-    //private bool hitButton;
-
     public AudioSource audioSource;
     public AudioClip hoverSound;
-    //public AudioClip selectSound;
-
-    //private VRInput controller;
-    //public UnityEvent OnAButtonDown;
-
+    
     public UINavigation nav;
     public CanvasGroup thisPanel;
     public CanvasGroup nextPanel;
@@ -41,18 +33,9 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
 
         icon.enabled = true;
         textBack.enabled = false;
-        text.enabled = false;
-        //hitButton = false;     
+        text.enabled = false; 
 
     }
-
-    //public void Update()
-    //{
-    //    if (Input.GetButtonDown("RightAButton"))
-    //    {
-    //        PanelSwitch();
-    //    }
-    //}
 
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -68,7 +51,7 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
         // hover sounds
         SoundManager.instance.PlaySound(hoverSound, audioSource);
 
-        //make button 'selectable' by assigning active panels from UINavigation
+        //make button 'selectable' by assigning active panels to UINavigation (controller)
         nav.thisPanelActive = thisPanel;
         nav.nextPanelActive = nextPanel;
 
@@ -84,32 +67,8 @@ public class UIWelcomeButtonInteractable : MonoBehaviour, IPointerEnterHandler, 
         textBack.enabled = false;
         text.enabled = false;
 
-        //make button 'unselectable' by removing active panels from UINavigation
+        //make button 'unselectable' by removing active panels to UINavigation (controller)
         nav.thisPanelActive = null;
         nav.nextPanelActive = null;
     }
-
-
-    //public void PanelSwitch()
-    //{
-    //    if(hitButton == true)
-    //    {
-    //        //play select sound
-    //        SoundManager.instance.PlaySound(selectSound, audioSource);
-                                 
-    //    }
-
-
-        //thispanel.alpha = 0;
-        //thispanel.interactable = false;
-        //thispanel.blocksraycasts = false;
-
-        //nextpanel.alpha = 0;
-        //nextpanel.interactable = true;
-        //nextpanel.blocksraycasts = true;
-
-
-
-
-    //}
 }
