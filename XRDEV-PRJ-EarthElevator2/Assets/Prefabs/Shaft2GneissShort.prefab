@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2166736920877815539
+--- !u!1 &948117590621581713
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2166736920877815500}
-  - component: {fileID: 2166736920877815503}
-  - component: {fileID: 2166736920877815502}
-  - component: {fileID: 2166736920877815537}
-  - component: {fileID: 2166736920877815536}
-  m_Layer: 0
-  m_Name: Shaft2GneissShort
+  - component: {fileID: 948117590621581742}
+  - component: {fileID: 948117590621581741}
+  - component: {fileID: 948117590621581740}
+  - component: {fileID: 948117590621581715}
+  - component: {fileID: 948117590621581714}
+  - component: {fileID: 6032579119979099499}
+  m_Layer: 7
+  m_Name: Shaft2GneissShort 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2166736920877815500
+--- !u!4 &948117590621581742
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166736920877815539}
+  m_GameObject: {fileID: 948117590621581713}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,13 +35,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
---- !u!114 &2166736920877815503
+--- !u!114 &948117590621581741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166736920877815539}
+  m_GameObject: {fileID: 948117590621581713}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
@@ -668,13 +669,13 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!23 &2166736920877815502
+--- !u!23 &948117590621581740
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166736920877815539}
+  m_GameObject: {fileID: 948117590621581713}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -710,21 +711,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2166736920877815537
+--- !u!33 &948117590621581715
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166736920877815539}
+  m_GameObject: {fileID: 948117590621581713}
   m_Mesh: {fileID: 0}
---- !u!64 &2166736920877815536
+--- !u!64 &948117590621581714
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2166736920877815539}
+  m_GameObject: {fileID: 948117590621581713}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -732,3 +733,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &6032579119979099499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948117590621581713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 979f37d7bbe49ed46b7c96a2242b0a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAmplitude: 0.03
+  minAmplitude: 0.01
+  amplitudePeriod: 5
+  frequency: 10
+  pauseBeforeShake: 3
+  shakeDuration: 5
+  pauseAfterShake: 1
+  audioSource: {fileID: 0}
+  earthquakeSound: {fileID: 8300000, guid: 55a2247122543b641a55e071855d3de5, type: 3}
+  infoUI: {fileID: 0}
+  earthquakePanel: {fileID: 0}

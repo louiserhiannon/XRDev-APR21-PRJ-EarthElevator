@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3721691731477862760}
   - component: {fileID: 3721691731477862763}
   - component: {fileID: 3721691731477862762}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shaft1GraniteShort
   m_TagString: Untagged
   m_Icon: {fileID: 0}
