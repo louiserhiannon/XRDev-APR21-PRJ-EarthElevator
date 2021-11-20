@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OverridePanelSwitch : UIAction
+public class OverridePanelSwitch : UINavigation
 {
-      
-    public override void ButtonClick()
+    public override void UIAction()
     {
         if (thisPanelActive != null && nextPanelActive != null)
         {

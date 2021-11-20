@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 948117590621581740}
   - component: {fileID: 948117590621581715}
   - component: {fileID: 948117590621581714}
+  - component: {fileID: 6032579119979099499}
   m_Layer: 7
-  m_Name: Shaft2GneissShort
+  m_Name: Shaft2GneissShort 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,3 +733,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &6032579119979099499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948117590621581713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 979f37d7bbe49ed46b7c96a2242b0a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAmplitude: 0.03
+  minAmplitude: 0.01
+  amplitudePeriod: 5
+  frequency: 10
+  pauseBeforeShake: 3
+  shakeDuration: 5
+  pauseAfterShake: 1
+  audioSource: {fileID: 0}
+  earthquakeSound: {fileID: 8300000, guid: 55a2247122543b641a55e071855d3de5, type: 3}
+  infoUI: {fileID: 0}
+  earthquakePanel: {fileID: 0}

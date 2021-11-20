@@ -39,16 +39,14 @@ public class Earthquake : MonoBehaviour
 
         directionOfShake = transform.right;
         initialPosition = transform.position; // store this to avoid floating point error drift
-   
+
+        
+        StartCoroutine(GroundShake());
+
+        
         
 
     }
-
-    public void BeginShake()
-    {
-        StartCoroutine(GroundShake());
-    }
-
 
     private IEnumerator GroundShake()
     {
