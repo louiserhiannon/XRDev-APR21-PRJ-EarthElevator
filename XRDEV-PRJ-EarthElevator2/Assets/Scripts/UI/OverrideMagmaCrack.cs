@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class OverrideMagmaCrack : UINavigation
+public class OverrideMagmaCrack : UIAction
 {
     public float pauseBeforeCrack = 1.5f;
     public GameObject groundCrackPrefab;
@@ -16,7 +16,7 @@ public class OverrideMagmaCrack : UINavigation
 
 
 
-    public override void UIAction()
+    public override void ButtonClick()
     {
         if (thisPanelActive != null)
         {

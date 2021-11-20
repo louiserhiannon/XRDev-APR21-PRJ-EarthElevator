@@ -19,6 +19,7 @@ public class MoveElevator : MonoBehaviour
     private float endPosDown = 120f;
     public Canvas infoUI;
     public CanvasGroup activePanel;
+    public Earthquake earthquake;
 
 
     //Earth Structure Variables
@@ -80,6 +81,10 @@ public class MoveElevator : MonoBehaviour
             MoveElevatorUp();
         }
 
+        if (currentDepth < 26f && currentDepth > 24f)
+        {
+            earthquake.BeginShake();
+        }
 
         //Set elevator max speed
         if (currentDepth < 100f)

@@ -20,7 +20,7 @@ public class UINavButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPoi
     public AudioSource audioSource;
     public AudioClip hoverSound;
 
-    public UINavigation nav;
+    public UIAction nav;
     public CanvasGroup thisPanel;
     public CanvasGroup nextPanel;
 
@@ -60,4 +60,5 @@ public class UINavButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPoi
         nav.thisPanelActive = null;
         nav.nextPanelActive = null;
     }
-}
+
+}  
