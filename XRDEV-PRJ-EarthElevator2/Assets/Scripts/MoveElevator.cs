@@ -18,7 +18,9 @@ public class MoveElevator : MonoBehaviour
     private float endPosUp = -30f;
     private float endPosDown = 120f;
     public Canvas infoUI;
-    public CanvasGroup activePanel;
+    public Canvas controllerLeftUI;
+    public Canvas controllerRightUI;
+    public Earthquake earthquake;
 
 
     //Earth Structure Variables
@@ -80,6 +82,11 @@ public class MoveElevator : MonoBehaviour
             MoveElevatorUp();
         }
 
+        //Run Earthquake code in crust
+        if (currentDepth > 24f && currentDepth < 26f)
+        {
+            earthquake.BeginShake();
+        }
 
         //Set elevator max speed
         if (currentDepth < 100f)
@@ -143,7 +150,7 @@ public class MoveElevator : MonoBehaviour
         if (currentDepth > (destinationDepth - 1))
         {
             StopElevatorSound();
-            DisplayActivePanel();
+            
         }
     }
 
@@ -193,7 +200,6 @@ public class MoveElevator : MonoBehaviour
         if (currentDepth < (destinationDepth + 1))
         {
             StopElevatorSound();
-            DisplayActivePanel();
         }
     }
 
@@ -217,36 +223,21 @@ public class MoveElevator : MonoBehaviour
             panel.blocksRaycasts = false;
         }
 
-    }
-
-    public void DisplayActivePanel()
-    {
-        //Turn up alpha on active panel
-
-        activePanel.alpha = 1;
-        activePanel.interactable = true;
-        activePanel.blocksRaycasts = true;
-
-        //Hide anything that shouldn't be there
-        
-        foreach (Image image in activePanel.GetComponentsInChildren<Image>())
+        foreach (CanvasGroup controllerRightPanel in controllerRightUI.GetComponentsInChildren<CanvasGroup>())
         {
-            if (image.tag == "Hidden")
-            {
-                image.enabled = false;
-                Debug.Log("Text backing should disappear");
-            }
-                
+            controllerRightPanel.alpha = 0;
+            controllerRightPanel.interactable = false;
+            controllerRightPanel.blocksRaycasts = false;
         }
 
-        foreach (TMP_Text text in activePanel.GetComponentsInChildren<TMP_Text>())
+        foreach (CanvasGroup controllerLeftPanel in controllerLeftUI.GetComponentsInChildren<CanvasGroup>())
         {
-            if(text.tag == "Hidden")
-            {
-                text.enabled = false;
-                Debug.Log("Text should disappear");
-            }
-                      
+            controllerLeftPanel.alpha = 0;
+            controllerLeftPanel.interactable = false;
+            controllerLeftPanel.blocksRaycasts = false;
         }
+
     }
+
+    
 }

@@ -13,6 +13,7 @@ public class VRInput : MonoBehaviour
     private string triggerButton;
     private string gripButton;
     private string AButton;
+    private string XButton;
     //public float triggerValue;
 
     public UnityEvent OnTriggerDown;
@@ -20,6 +21,8 @@ public class VRInput : MonoBehaviour
     public UnityEvent OnGrip;
     public UnityEvent OnGripUp;
     public UnityEvent OnAButtonDown;
+    public UnityEvent OnAButton;
+    public UnityEvent OnAButtonUp;
 
 
     // Start is called before the first frame update
@@ -57,6 +60,16 @@ public class VRInput : MonoBehaviour
         if (Input.GetButtonDown(AButton))
         {
             OnAButtonDown?.Invoke();
+        }
+
+        if (Input.GetButton(AButton))
+        {
+            OnAButton?.Invoke();
+        }
+
+        if (Input.GetButtonUp(AButton))
+        {
+            OnAButtonUp?.Invoke();
         }
 
         //triggerValue = Input.GetAxis(triggerAxis);

@@ -7,6 +7,8 @@ TagManager:
   - ButtonImage
   - Hidden
   - Welcome
+  - Earthquake
+  - PanelSwitch
   layers:
   - Default
   - TransparentFX

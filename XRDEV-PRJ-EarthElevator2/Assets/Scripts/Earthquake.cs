@@ -13,10 +13,10 @@ public class Earthquake : MonoBehaviour
     public float amplitudePeriod; //the period of the amplitude as it changes over the course of the earthquake (in seconds)
     public float frequency; // the frequency of the earthquake (oscilations per second or Hz)
     public float pauseBeforeShake = 3f;
-    public float shakeDuration = 5f;
-    public float pauseAfterShake = 1f;
-    private float timePassed;
-
+    public float shakeDuration = 15f;
+    public float pauseAfterShake = 2f;
+    [SerializeField] private float shakeTime;
+    
     private float amplitude; // the actual amount it moves at a particular point during the earthquake
 
     public AudioSource audioSource;
@@ -38,52 +38,48 @@ public class Earthquake : MonoBehaviour
         }
 
         directionOfShake = transform.right;
-        initialPosition = transform.position; // store this to avoid floating point error drift
-
+        initialPosition = transform.position; // store this to avoid floating point error drift     
         
+     }
+
+    public void BeginShake()
+    {
+        shakeTime = 0f;     
         StartCoroutine(GroundShake());
-
-        
-        
-
     }
 
     private IEnumerator GroundShake()
     {
         yield return new WaitForSeconds(pauseBeforeShake);
-
-        timePassed = 0f;
         audioSource.PlayOneShot(earthquakeSound);
-
-        while (timePassed < shakeDuration)
+        
+        while (shakeTime < shakeDuration)
         {
+            shakeTime += Time.fixedDeltaTime;
             amplitude = minAmplitude + (Mathf.Sin(2 * Mathf.PI * Time.time / amplitudePeriod) + 1) / 2 * (maxAmplitude - minAmplitude);
             transform.position = initialPosition + directionOfShake * Mathf.Sin(2 * Mathf.PI * frequency * Time.time) * amplitude;
 
-            timePassed += Time.deltaTime;
             yield return null;
         }
 
-        StopGroundShake();
+        transform.position = initialPosition;
+        audioSource.Stop();
 
         yield return new WaitForSeconds(pauseAfterShake);
 
         ActivateEarthquakePanel();
 
+        StopCoroutine(GroundShake());
+
     }
 
     
-
-    private void StopGroundShake()
-    {
-        audioSource.Stop();
-    }
 
     private void ActivateEarthquakePanel()
     {
         earthquakePanel.alpha = 1;
         earthquakePanel.interactable = true;
-        earthquakePanel.blocksRaycasts = true; ;
+        earthquakePanel.blocksRaycasts = true;
     }
 
     //    void FixedUpdate()

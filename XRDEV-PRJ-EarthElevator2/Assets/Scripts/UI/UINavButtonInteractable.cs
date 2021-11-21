@@ -23,6 +23,7 @@ public class UINavButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPoi
     public UINavigation nav;
     public CanvasGroup thisPanel;
     public CanvasGroup nextPanel;
+    public GameObject thisButton;
 
     private void OnEnable()
     {
@@ -40,11 +41,13 @@ public class UINavButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPoi
 
 
         // hover sounds
-        SoundManager.instance.PlaySound(hoverSound, audioSource);
+        audioSource.PlayOneShot(hoverSound);
+        Debug.Log("Hover sounds should be playing");
 
         //make button 'selectable' by assigning active panels to UINavigation (controller)
         nav.thisPanelActive = thisPanel;
         nav.nextPanelActive = nextPanel;
+        nav.thisButtonActive = thisButton;
 
     }
 
@@ -59,5 +62,6 @@ public class UINavButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPoi
         //make button 'unselectable' by removing active panels to UINavigation (controller)
         nav.thisPanelActive = null;
         nav.nextPanelActive = null;
+        nav.thisButtonActive = null;
     }
 }
