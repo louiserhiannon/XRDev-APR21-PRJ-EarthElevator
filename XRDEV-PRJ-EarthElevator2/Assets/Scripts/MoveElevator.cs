@@ -60,6 +60,8 @@ public class MoveElevator : MonoBehaviour
         //Disable informational canvases
 
         DisablePanels();
+
+        earthquake.BeginShake();
     }
 
     void Update()
@@ -82,11 +84,7 @@ public class MoveElevator : MonoBehaviour
             MoveElevatorUp();
         }
 
-        //Run Earthquake code in crust
-        if (currentDepth > 24f && currentDepth < 26f)
-        {
-            earthquake.BeginShake();
-        }
+        
 
         //Set elevator max speed
         if (currentDepth < 100f)

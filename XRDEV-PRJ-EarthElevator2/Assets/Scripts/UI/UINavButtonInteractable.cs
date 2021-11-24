@@ -21,7 +21,7 @@ public class UINavButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPoi
     public AudioClip hoverSound;
 
     public UINavigation nav;
-    public CanvasGroup thisPanel;
+    //public CanvasGroup thisPanel;
     public CanvasGroup nextPanel;
     public GameObject thisButton;
 
@@ -45,7 +45,7 @@ public class UINavButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPoi
         Debug.Log("Hover sounds should be playing");
 
         //make button 'selectable' by assigning active panels to UINavigation (controller)
-        nav.thisPanelActive = thisPanel;
+        //nav.thisPanelActive = thisPanel;
         nav.nextPanelActive = nextPanel;
         nav.thisButtonActive = thisButton;
 
@@ -60,7 +60,7 @@ public class UINavButtonInteractable : MonoBehaviour, IPointerEnterHandler, IPoi
         transform.DOScale(startScale, hoverEndAnimationDuration);
 
         //make button 'unselectable' by removing active panels to UINavigation (controller)
-        nav.thisPanelActive = null;
+        //nav.thisPanelActive = null;
         nav.nextPanelActive = null;
         nav.thisButtonActive = null;
     }

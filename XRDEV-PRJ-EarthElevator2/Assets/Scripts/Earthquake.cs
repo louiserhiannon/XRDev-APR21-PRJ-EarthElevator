@@ -24,23 +24,17 @@ public class Earthquake : MonoBehaviour
 
     public Canvas infoUI;
     public CanvasGroup earthquakePanel;
+    public MoveElevator moveElevator;
     
     
 
     void Start()
     {
 
-        foreach (CanvasGroup panel in infoUI.GetComponentsInChildren<CanvasGroup>())
-        {
-            panel.alpha = 0;
-            panel.interactable = false;
-            panel.blocksRaycasts = false;
-        }
-
         directionOfShake = transform.right;
         initialPosition = transform.position; // store this to avoid floating point error drift     
         
-     }
+    }
 
     public void BeginShake()
     {
@@ -50,7 +44,24 @@ public class Earthquake : MonoBehaviour
 
     private IEnumerator GroundShake()
     {
+       
+        while (moveElevator.currentDepth < 24f || moveElevator.currentDepth > 26f)
+            {
+                yield return null;
+            }
+
         yield return new WaitForSeconds(pauseBeforeShake);
+
+        // check to see if it was just moving through
+        // Add code that "resets" the coroutine. I think the coroutine needs to be called using the string method to allow this
+        // https://forum.unity.com/threads/how-to-cancel-and-restart-a-coroutine.435493/
+
+        //if (moveElevator.currentDepth > 24f || moveElevator.currentDepth < 26f)
+        //{
+            
+
+        //}
+
         audioSource.PlayOneShot(earthquakeSound);
         
         while (shakeTime < shakeDuration)
@@ -62,14 +73,19 @@ public class Earthquake : MonoBehaviour
             yield return null;
         }
 
-        transform.position = initialPosition;
         audioSource.Stop();
 
         yield return new WaitForSeconds(pauseAfterShake);
 
         ActivateEarthquakePanel();
 
-        StopCoroutine(GroundShake());
+        //Add code here to reset the coroutine, but only once it has left the "level". See above for link
+        //while (moveElevator.currentDepth >= 24f || moveElevator.currentDepth <= 26f)
+        //{
+        //    yield return null;
+        //}
+
+        //StartCoroutine(GroundShake());
 
     }
 
