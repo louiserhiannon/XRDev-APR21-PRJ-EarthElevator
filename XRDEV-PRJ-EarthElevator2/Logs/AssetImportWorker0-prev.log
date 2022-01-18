@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.2f1 (8fd9074bf66c) revision 9427207'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16205 MB
+OS: 'Windows 10 Home; OS build 22000.434; Version 2009; 64bit' Language: 'en' Physical Memory: 16205 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,12 +15,12 @@ C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-Ea
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59963
+55360
 Successfully changed project path to: C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2
 C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 456.60 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.60 ms.
+Refreshing native plugins compatible for Editor in 90.94 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 1.45 ms.
 Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/looby/Documents/Unity/GitHub/XRDev-APR21-PRJ-EarthElevator/XRDEV-PRJ-EarthElevator2/Assets
@@ -36,26 +36,26 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001562 seconds.
+Registered in 0.001024 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 79.01 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 79.16 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.640 seconds
+- Completed reload, in  1.404 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.123585 seconds.
+Registered in 0.006944 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.11 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 83.54 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -65,235 +65,36 @@ RoslynAnalysisRunner has terminated.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.65.0
 Mono: successfully reloaded assembly
-- Completed reload, in  1.198 seconds
+- Completed reload, in  1.101 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.16 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 4378 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 204.1 MB.
-System memory in use after: 201.6 MB.
-
-Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 4780.
-Total: 5.066600 ms (FindLiveObjects: 0.749200 ms CreateObjectMapping: 0.410500 ms MarkObjects: 2.452600 ms  DeleteObjects: 1.452000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scripts/UI/UINavigation.cs
-  artifactKey: Guid(06a15931ad73eab42b1f2d393a16a33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UI/UINavigation.cs using Guid(06a15931ad73eab42b1f2d393a16a33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38def2e17e093aa6c30c603dce58dd79') in 0.022911 seconds
-  Import took 0.029517 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007925 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.127 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.11 ms, found 9 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.13 ms, found 9 plugins.
 Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 4191 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 190.4 MB.
-System memory in use after: 188.1 MB.
+Unloading 4413 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 206.2 MB.
+System memory in use after: 203.7 MB.
 
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 4783.
-Total: 3.663900 ms (FindLiveObjects: 0.401300 ms CreateObjectMapping: 0.274300 ms MarkObjects: 1.949800 ms  DeleteObjects: 1.037600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007938 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.159 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 4191 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 190.5 MB.
-System memory in use after: 188.2 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 4786.
-Total: 4.862000 ms (FindLiveObjects: 0.461400 ms CreateObjectMapping: 0.294400 ms MarkObjects: 2.759200 ms  DeleteObjects: 1.345900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007359 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.135 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 4191 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 190.5 MB.
-System memory in use after: 188.2 MB.
-
-Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 4789.
-Total: 3.609900 ms (FindLiveObjects: 0.340500 ms CreateObjectMapping: 0.139900 ms MarkObjects: 2.026100 ms  DeleteObjects: 1.102000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 1112.218363 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_1_Pack2.wav
-  artifactKey: Guid(311ec0e3ddc71474eb5f91f03161f401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_1_Pack2.wav using Guid(311ec0e3ddc71474eb5f91f03161f401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0c4789b26323743334b1182f9e0555') in 0.087852 seconds
-  Import took 0.095616 seconds .
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 4816.
+Total: 3.787400 ms (FindLiveObjects: 0.508400 ms CreateObjectMapping: 0.287500 ms MarkObjects: 1.992900 ms  DeleteObjects: 0.997900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.746611 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_2_Pack2.wav
-  artifactKey: Guid(438aa3c1164a6b04c86363d56d293891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_2_Pack2.wav using Guid(438aa3c1164a6b04c86363d56d293891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4891a2fd39f8fab7e0ef4f2569ffa6a1') in 0.012775 seconds
-  Import took 0.019482 seconds .
+  path: Assets/Models
+  artifactKey: Guid(a27f3b3b957da8c43889708e8a36488f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(a27f3b3b957da8c43889708e8a36488f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc43317f0a177999d3ec093feeba3b76') in 0.010714 seconds
+  Import took 0.016339 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.829687 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_4_Pack2.wav
-  artifactKey: Guid(0b089b225b9095444afd110f536faa69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_4_Pack2.wav using Guid(0b089b225b9095444afd110f536faa69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb9d51b5300a9549d6fbae8ffc26ff2') in 0.013444 seconds
-  Import took 0.019660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.059739 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_3_Pack2.wav
-  artifactKey: Guid(34230dbfa454a924bb34d47e8fa330b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_3_Pack2.wav using Guid(34230dbfa454a924bb34d47e8fa330b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24bc8afb59049f62537ab34f06c2ab54') in 0.014353 seconds
-  Import took 0.020585 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.731227 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_6_Pack2.wav
-  artifactKey: Guid(e561c9f0cfea72e4db68ca897eb8bf2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_6_Pack2.wav using Guid(e561c9f0cfea72e4db68ca897eb8bf2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a03f14ad182322e8204ea3e43c1780') in 0.012926 seconds
-  Import took 0.019568 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.304762 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_8_Pack2.wav
-  artifactKey: Guid(2a4aaac7e3d8dc84facd026a69574973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_8_Pack2.wav using Guid(2a4aaac7e3d8dc84facd026a69574973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ccada639e6bcfede6a5f9da5419a3b') in 0.013415 seconds
-  Import took 0.019744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.918035 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_11_Pack2.wav
-  artifactKey: Guid(d825a8daf3055a6469b2adf50ff04eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_11_Pack2.wav using Guid(d825a8daf3055a6469b2adf50ff04eb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee47c50e2745f96e7ac2ae0ca5c63de') in 0.013510 seconds
-  Import took 0.020254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.296085 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_12_Pack2.wav
-  artifactKey: Guid(c80e1e0c2aff10746ac5fa8b1f4c1680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_12_Pack2.wav using Guid(c80e1e0c2aff10746ac5fa8b1f4c1680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877cff5af1f210c760b69d415c48f73e') in 0.012891 seconds
-  Import took 0.019485 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.867098 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_13_Pack2.wav
-  artifactKey: Guid(12f37011aefdb604bb89de99e954dc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_13_Pack2.wav using Guid(12f37011aefdb604bb89de99e954dc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38b067291286d1e1c44f3a200ff2e9c') in 0.013132 seconds
-  Import took 0.019750 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.461106 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_14_Pack2.wav
-  artifactKey: Guid(9d255dbf95218104a87ea1459a9c60aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_14_Pack2.wav using Guid(9d255dbf95218104a87ea1459a9c60aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d3f829721d4b46496f8a2141874691') in 0.013130 seconds
-  Import took 0.019886 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.400412 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_15_Pack2.wav
-  artifactKey: Guid(58de79d478d179d48914882b9b61794c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_15_Pack2.wav using Guid(58de79d478d179d48914882b9b61794c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b454657b84ed7332f5f65e72e560053e') in 0.012996 seconds
-  Import took 0.019572 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 286.855949 seconds.
-  path: Assets/Sounds/UI_Buttons_Pack2/Button_30_Pack2.wav
-  artifactKey: Guid(6362dc82c01266f4099527e462c7538b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/UI_Buttons_Pack2/Button_30_Pack2.wav using Guid(6362dc82c01266f4099527e462c7538b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dafd76c72832f94942b8dd19decbbb2e') in 0.014719 seconds
-  Import took 0.022263 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 450.212645 seconds.
-  path: Assets/Sounds/Casual SoundFX Pack/Sounds
-  artifactKey: Guid(e21b2eaccae16ca4a882e969e2f2248d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Casual SoundFX Pack/Sounds using Guid(e21b2eaccae16ca4a882e969e2f2248d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc80aebaf48538f812b6f86e03d1dd69') in 0.009291 seconds
-  Import took 0.016114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.443053 seconds.
-  path: Assets/Sounds/Casual SoundFX Pack/Sounds/Pickup High.wav
-  artifactKey: Guid(3445a8b2782c4134985eb470cc656b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Casual SoundFX Pack/Sounds/Pickup High.wav using Guid(3445a8b2782c4134985eb470cc656b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353d90867315b4cdc07825cbd551c2e7') in 0.013930 seconds
-  Import took 0.021190 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.201477 seconds.
-  path: Assets/Sounds/Casual SoundFX Pack/Sounds/Positive Synth.wav
-  artifactKey: Guid(2c48707a2a7183449ae6190e9e1addb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Casual SoundFX Pack/Sounds/Positive Synth.wav using Guid(2c48707a2a7183449ae6190e9e1addb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529fc910cc044d230b328f503ca99238') in 0.014238 seconds
-  Import took 0.020640 seconds .
+  Time since last request: 130.669775 seconds.
+  path: Assets/Prefabs/Compass.prefab
+  artifactKey: Guid(2a8c32b232b13c8488e2127860e90eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Compass.prefab using Guid(2a8c32b232b13c8488e2127860e90eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ebdadf8706737b32c98f35161c154f5') in 0.189003 seconds
+  Import took 0.195897 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

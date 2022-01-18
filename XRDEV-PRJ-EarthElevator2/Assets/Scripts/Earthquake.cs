@@ -21,6 +21,7 @@ public class Earthquake : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip earthquakeSound;
+    //What about using the SoundManager here?
 
     public Canvas infoUI;
     public CanvasGroup earthquakePanel;

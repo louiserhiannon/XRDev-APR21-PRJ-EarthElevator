@@ -48,6 +48,11 @@ public class UINavigation : MonoBehaviour
         }
     }
 
+    public void OnDisable()
+    {
+        controller.OnAButtonDown.RemoveListener(UIAction);
+    }
+
     public void UIAction()
     {
 

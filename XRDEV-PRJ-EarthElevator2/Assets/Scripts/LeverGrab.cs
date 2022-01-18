@@ -12,7 +12,7 @@ public class LeverGrab : MonoBehaviour
     {
         controller = GetComponent<VRInput>();
         controller.OnTriggerDown.AddListener(GrabLever); // hooks into event identified in VRInput and connects it to GrabLever()
-        controller.OnTriggerUp.AddListener(ReleaseLever); // hooks into event identified in VRInput and connects it to GrabLever()
+        controller.OnTriggerUp.AddListener(ReleaseLever); // hooks into event identified in VRInput and connects it to ReleaseLever()
     }
 
     private void OnDisable()
