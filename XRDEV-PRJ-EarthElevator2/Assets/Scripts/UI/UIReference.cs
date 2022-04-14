@@ -15,6 +15,12 @@ public class UIReference : MonoBehaviour
         controller.OnAButtonUp.AddListener(CloseUIReference);
     }
 
+    public void OnDisable()
+    {
+        controller.OnAButton.RemoveListener(OpenUIReference);
+        controller.OnAButtonUp.RemoveListener(CloseUIReference);
+    }
+
     public void OpenUIReference()
     {
         if (activePanel != null)

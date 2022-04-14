@@ -31,7 +31,7 @@ public class UINavigation : MonoBehaviour
     private Vector3 endScaleCrack;
     public float crackGrowthDuration = 10f;
     public float pauseBeforeTrophy = 6f;
-    public float pauseAfterTrophy = 6f;
+    public float pauseAfterTrophy = 10f;
     private float pauseBeforeInstantiate = 6f;
 
     public void OnEnable()

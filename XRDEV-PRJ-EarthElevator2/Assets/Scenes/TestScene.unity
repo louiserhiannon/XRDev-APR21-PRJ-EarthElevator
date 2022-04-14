@@ -524,8 +524,6 @@ MonoBehaviour:
   animatedButton: {fileID: 438227219}
   destination: {fileID: 606746002}
   depth: 600
-  infoUI: {fileID: 0}
-  activeCanvas: {fileID: 0}
 --- !u!114 &438227219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,8 +821,10 @@ MonoBehaviour:
   speed: 0
   leverAngle: {fileID: 1439417679}
   leverValue: 0
-  activeCanvas: {fileID: 0}
   infoUI: {fileID: 0}
+  controllerLeftUI: {fileID: 0}
+  controllerRightUI: {fileID: 0}
+  earthquake: {fileID: 0}
   transitions:
   - 50
   - 100
@@ -5901,7 +5901,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-10942
+  m_Name: pb_Mesh-20850
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6912,8 +6912,6 @@ MonoBehaviour:
   animatedButton: {fileID: 1432522225}
   destination: {fileID: 606746002}
   depth: 390
-  infoUI: {fileID: 0}
-  activeCanvas: {fileID: 0}
 --- !u!114 &1432522225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7366,8 +7364,6 @@ MonoBehaviour:
   animatedButton: {fileID: 1699538242}
   destination: {fileID: 606746002}
   depth: 220
-  infoUI: {fileID: 0}
-  activeCanvas: {fileID: 0}
 --- !u!114 &1699538242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7495,8 +7491,6 @@ MonoBehaviour:
   animatedButton: {fileID: 1849630710}
   destination: {fileID: 606746002}
   depth: 120
-  infoUI: {fileID: 0}
-  activeCanvas: {fileID: 0}
 --- !u!114 &1849630710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7637,6 +7631,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shaft5OuterCore
       objectReference: {fileID: 0}
+    - target: {fileID: 985161573837615684, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
+      propertyPath: flowSpeedX
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 985161573837615684, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
+      propertyPath: flowSpeedY
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 3876136754741300604, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -7647,15 +7649,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3945650825437556959, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5.25
       objectReference: {fileID: 0}
     - target: {fileID: 3945650825437556959, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -11.64
       objectReference: {fileID: 0}
     - target: {fileID: 3945650825437556959, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5.47
       objectReference: {fileID: 0}
     - target: {fileID: 3945650825437556959, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7685,6 +7687,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5146994197502489481, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3827c312b0f01654cbf888e026cc2df9, type: 2}
     - target: {fileID: 5791407615310183091, guid: 1a636a914453f34478d8d2e9c099113a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -7823,8 +7829,6 @@ MonoBehaviour:
   animatedButton: {fileID: 1904513202}
   destination: {fileID: 606746002}
   depth: 175
-  infoUI: {fileID: 0}
-  activeCanvas: {fileID: 0}
 --- !u!114 &1904513202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7920,8 +7924,6 @@ MonoBehaviour:
   animatedButton: {fileID: 1977019814}
   destination: {fileID: 606746002}
   depth: 75
-  infoUI: {fileID: 0}
-  activeCanvas: {fileID: 0}
 --- !u!114 &1977019814
 MonoBehaviour:
   m_ObjectHideFlags: 0
