@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class LeverAngle : MonoBehaviour
 {
+    [SerializeField]
+    private float adjustedLeverAngle;
+    [SerializeField]
+    private float rawLeverAngle;
     public float leverValue;
-    public float adjustedLeverAngle;
     private HingeJoint lever;
     
     void Start()
@@ -15,7 +18,8 @@ public class LeverAngle : MonoBehaviour
 
     void Update()
     {
-        adjustedLeverAngle = lever.angle - lever.limits.min;
+        rawLeverAngle = lever.angle;
+        adjustedLeverAngle = rawLeverAngle - lever.limits.min;
         leverValue = adjustedLeverAngle / (lever.limits.max - lever.limits.min);
     }
 }
