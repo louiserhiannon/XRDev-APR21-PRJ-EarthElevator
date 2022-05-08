@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class MoveElevator : MonoBehaviour
 {
@@ -10,9 +11,15 @@ public class MoveElevator : MonoBehaviour
     private AudioSource source;
     public float elevatorVolume = 0.5f;
     public float destinationDepth;
-    public float currentDepth;
+    public float currentDepth = 0f;
+    [SerializeField]
+    private List<float> currentDepthShafts = new List<float>();
     public float elevatorMaxSpeed;
     public float speed;
+    private float targetSpeed;
+    private float decelerationTime = 7f;
+    [SerializeField]
+    private float acceleration;
     public LeverAngle leverAngle;
     public float leverValue;
     private float endPosUp = -30f;
@@ -24,7 +31,7 @@ public class MoveElevator : MonoBehaviour
 
 
     //Earth Structure Variables
-    public List<float> transitions;
+    public List<float> transitionDepths;
     
 
 
@@ -38,18 +45,20 @@ public class MoveElevator : MonoBehaviour
     }
 
     public List<Layer> layers;
-
+    
 
     void Start()
     {
         for (int i = 0; i < activePoints.Count; i++)
         {
+            currentDepthShafts.Add(currentDepth - activePoints[i].position.y); 
             for (int j = 0; j < layers.Count; j++)
             {
                 GameObject shaft = Instantiate(layers[j].prefab, activePoints[i], false);
                 shaft.SetActive(layers[j].active);
                 layers[j].shafts.Add(shaft);
             }
+            
         }
 
         source = GetComponent<AudioSource>();
@@ -67,9 +76,15 @@ public class MoveElevator : MonoBehaviour
     void Update()
     {
 
-        // Determine movement direction based on destination depth and current depth
-        // if elevator is 'above' the target depth
-        if (destinationDepth > (currentDepth + 1)) // + 1 added to stop it calling MoveElevatorDown() when it's just going to get held up by the next set of if statements
+        //calculate shaft section depths
+        for (int i = 0; i < activePoints.Count; i++)
+        {
+            currentDepthShafts[i] = currentDepth - activePoints[i].position.y;
+        }
+
+            // Determine movement direction based on destination depth and current depth
+            // if elevator is 'above' the target depth
+            if (destinationDepth > (currentDepth + 1)) // + 1 added to stop it calling MoveElevatorDown() when it's just going to get held up by the next set of if statements
         {
             // move elevator down
             Debug.Log("destination depth more than current depth - should be moving down");
@@ -96,9 +111,10 @@ public class MoveElevator : MonoBehaviour
             elevatorMaxSpeed = 50f;
         }
 
-        //Update speed
+        //Set target speed
         leverValue = leverAngle.leverValue;
-        speed = leverValue * elevatorMaxSpeed;
+        targetSpeed = leverValue * elevatorMaxSpeed;
+        
 
     }
 
@@ -107,40 +123,45 @@ public class MoveElevator : MonoBehaviour
 
 
         //Activate correct shaft sections
-        for (int i = 0; i < transitions.Count; i++)
+        
+        for (int i = 0; i < activePoints.Count; i++)
         {
-            if (currentDepth > (transitions[i] - speed / 100) && currentDepth < (transitions[i] + speed / 100))
+            for (int j = 0; j < transitionDepths.Count; j++)
             {
-                for (int j = 0; j < activePoints.Count; j++)
+                if (currentDepthShafts[i] > transitionDepths[j] && currentDepthShafts[i] < transitionDepths[j+1])
                 {
                     for (int k = 0; k < layers.Count; k++)
                     {
-                        layers[k].shafts[j].SetActive(false);
-                    }
+                        layers[k].shafts[i].SetActive(false);
 
-                    layers[i + 1].shafts[j].SetActive(true);
+                    }
+                    layers[j + 1].shafts[i].SetActive(true);
                 }
             }
         }
 
+
+        //Set elevator speed (decelerate/accelerate 0-50 km either side of destination)
+        speed = targetSpeed; //initialize speed
+        if ((destinationDepth - currentDepth < (targetSpeed * decelerationTime /2) && destinationDepth - currentDepth > 1) || (destinationDepth - currentDepth > -(targetSpeed * decelerationTime / 2) && destinationDepth - currentDepth < -1))
+        {
+            SetDecelerateAccelerate();
+        }
+        
+           
         //play elevator sound when moving
         PlayElevatorSound();
 
-        // move shaft segments (move parent transform, not segments)
-
+        // move and cycle shaft segments (move parent transform, not segments)
 
         for (int i = 0; i < activePoints.Count; i++)
         {
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y >= endPosDown)
             {
-                //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y - 200 , activePoints[i].transform.position.z);
-                activePoints[i].transform.Translate(0f, -150f, 0f);
+                activePoints[i].transform.Translate(0f, -150f, 0f); //translate by a distance, not TO a point
             }
-
-            Debug.Log(activePoints[1].transform.position.y);
         }
-        //cycle shaft segments
 
         currentDepth += speed * Time.deltaTime;
 
@@ -148,28 +169,40 @@ public class MoveElevator : MonoBehaviour
         if (currentDepth > (destinationDepth - 1))
         {
             StopElevatorSound();
-            
         }
     }
+
+    
 
     public void MoveElevatorUp()
     {
         //Activate correct shaft sections
-        for (int i = 0; i < transitions.Count; i++)
+
+        for (int i = 0; i < activePoints.Count; i++)
         {
-            if (currentDepth > (transitions[i] - speed / 100) && currentDepth < (transitions[i] + speed / 100))
+            for (int j = 0; j < transitionDepths.Count; j++)
             {
-                for (int j = 0; j < activePoints.Count; j++)
+                if (currentDepthShafts[i] < transitionDepths[j+1] && currentDepthShafts[i] > transitionDepths[j])
                 {
                     for (int k = 0; k < layers.Count; k++)
                     {
-                        layers[k].shafts[j].SetActive(false);
-                    }
+                        layers[k].shafts[i].SetActive(false);
 
-                    layers[i].shafts[j].SetActive(true);
+                    }
+                    layers[j].shafts[i].SetActive(true);
                 }
             }
         }
+
+        //set elevator speed
+
+        speed = targetSpeed; //initialize speed
+        if ((destinationDepth - currentDepth < (targetSpeed * decelerationTime / 2) && destinationDepth - currentDepth > 1) || (destinationDepth - currentDepth > -(targetSpeed * decelerationTime / 2) && destinationDepth - currentDepth < -1))
+        {
+            SetDecelerateAccelerate();
+        }
+        
+
 
         //play elevator sound when moving
         PlayElevatorSound();
@@ -184,13 +217,9 @@ public class MoveElevator : MonoBehaviour
             activePoints[i].transform.Translate(0f, -speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y <= endPosUp)
             {
-                //activePoints[i].transform.position = new Vector3(activePoints[i].transform.position.x, activePoints[i].transform.position.y + 200f, activePoints[i].transform.position.z);
                 activePoints[i].transform.Translate(0f, 150f, 0f);
             }
         }
-
-
-
         //update depth
         currentDepth -= speed * Time.deltaTime;
 
@@ -201,6 +230,12 @@ public class MoveElevator : MonoBehaviour
         }
     }
 
+    private void SetDecelerateAccelerate()
+    {
+        acceleration = speed / (destinationDepth - currentDepth);
+        speed -= acceleration;
+        speed = Mathf.Clamp(speed, 0.1f, targetSpeed);
+    }
 
     public void PlayElevatorSound()
     {

@@ -3280,18 +3280,21 @@ MonoBehaviour:
   elevatorVolume: 0.5
   destinationDepth: 0
   currentDepth: 0
+  currentDepthShafts: []
   elevatorMaxSpeed: 100
   speed: 0
+  acceleration: 0
   leverAngle: {fileID: 1396463351}
   leverValue: 0
   infoUI: {fileID: 282174299}
   controllerLeftUI: {fileID: 1870978065}
   controllerRightUI: {fileID: 803200216}
   earthquake: {fileID: 486802192}
-  transitions:
+  transitionDepths:
   - 15
   - 35
-  - 50
+  - 100
+  - 450
   - 2900
   - 5100
   layers:
@@ -15107,8 +15110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76f2aebde638aca4ea9f16bdf19b857d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leverValue: 0
   adjustedLeverAngle: 0
+  rawLeverAngle: 0
+  leverValue: 0
 --- !u!1001 &1422379646
 PrefabInstance:
   m_ObjectHideFlags: 0
