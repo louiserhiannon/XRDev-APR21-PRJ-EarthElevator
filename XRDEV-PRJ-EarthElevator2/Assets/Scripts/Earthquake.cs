@@ -46,7 +46,7 @@ public class Earthquake : MonoBehaviour
     private IEnumerator GroundShake()
     {
        
-        while (moveElevator.currentDepth < 24f || moveElevator.currentDepth > 26f)
+        while (moveElevator.destinationDepth != 25f || moveElevator.currentDepth < 24f || moveElevator.currentDepth > 26f)
             {
                 yield return null;
             }

@@ -3276,6 +3276,7 @@ MonoBehaviour:
   - {fileID: 441040934}
   - {fileID: 381055502}
   - {fileID: 160991074}
+  activatedActivePoint: {fileID: 0}
   elevatorSound: {fileID: 8300000, guid: d8f2ddaacf5f7e54bb1315689c7a2ede, type: 3}
   elevatorVolume: 0.5
   destinationDepth: 0
@@ -3290,6 +3291,7 @@ MonoBehaviour:
   controllerLeftUI: {fileID: 1870978065}
   controllerRightUI: {fileID: 803200216}
   earthquake: {fileID: 486802192}
+  setParent: {fileID: 1396286094}
   transitionDepths:
   - 15
   - 35
@@ -3312,6 +3314,10 @@ MonoBehaviour:
     active: 0
   - key: Mantle
     prefab: {fileID: 5692436277961760105, guid: 56b93a0e8f2550c4fb6c37c419cc4776, type: 3}
+    shafts: []
+    active: 0
+  - key: LowerMantle
+    prefab: {fileID: 5692436277961760105, guid: 2c2e7e586c174434cbddb1c4ef26966b, type: 3}
     shafts: []
     active: 0
   - key: OuterCore
@@ -14932,8 +14938,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1396286093}
+  - component: {fileID: 1396286094}
   m_Layer: 0
-  m_Name: MagmaCrack
+  m_Name: LevelTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14953,6 +14960,19 @@ Transform:
   m_Father: {fileID: 486802190}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1396286094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396286092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7249b66f6e22f9b41870caf64379c840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shaftMovement: {fileID: 486802190}
 --- !u!1 &1396427042
 GameObject:
   m_ObjectHideFlags: 0

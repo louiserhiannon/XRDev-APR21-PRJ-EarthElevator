@@ -7,6 +7,7 @@ using System;
 public class MoveElevator : MonoBehaviour
 {
     public List<Transform> activePoints;
+    public Transform activatedActivePoint;
     public AudioClip elevatorSound;
     private AudioSource source;
     public float elevatorVolume = 0.5f;
@@ -28,6 +29,8 @@ public class MoveElevator : MonoBehaviour
     public Canvas controllerLeftUI;
     public Canvas controllerRightUI;
     public Earthquake earthquake;
+    public MoveLevelObjects setParent;
+    
 
 
     //Earth Structure Variables
@@ -70,6 +73,10 @@ public class MoveElevator : MonoBehaviour
 
         DisablePanels();
 
+        //initialize activatedActivePanel
+        activatedActivePoint = activePoints[0];
+
+        //start level coroutines
         earthquake.BeginShake();
     }
 
@@ -159,22 +166,35 @@ public class MoveElevator : MonoBehaviour
             activePoints[i].transform.Translate(0f, speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y >= endPosDown)
             {
+                if(activePoints[i] == activatedActivePoint) //Sets parent to reset to ShaftMovement just before segment flips. Potential issue if levels are closer together than total length of shaft (120)
+                {
+                    Debug.Log("ResetCalled"); 
+                    setParent.ResetLevelTransform();
+                    activatedActivePoint = null;
+                }
                 activePoints[i].transform.Translate(0f, -150f, 0f); //translate by a distance, not TO a point
             }
         }
 
+
         currentDepth += speed * Time.deltaTime;
 
-        //stop sound when elevator stops
+        //stop sound when elevator stops and Set activePoint tether for next destination
         if (currentDepth > (destinationDepth - 1))
         {
             StopElevatorSound();
+            SetActivePoint();
         }
+
+   
+        
     }
 
     
 
     public void MoveElevatorUp()
+
+    //FIX: won't go up!!! - may have fixed it...
     {
         //Activate correct shaft sections
 
@@ -182,7 +202,7 @@ public class MoveElevator : MonoBehaviour
         {
             for (int j = 0; j < transitionDepths.Count; j++)
             {
-                if (currentDepthShafts[i] < transitionDepths[j+1] && currentDepthShafts[i] > transitionDepths[j])
+                if (currentDepthShafts[i] > transitionDepths[j] && currentDepthShafts[i] < transitionDepths[j + 1])
                 {
                     for (int k = 0; k < layers.Count; k++)
                     {
@@ -194,10 +214,12 @@ public class MoveElevator : MonoBehaviour
             }
         }
 
+ 
+
         //set elevator speed
 
         speed = targetSpeed; //initialize speed
-        if ((destinationDepth - currentDepth < (targetSpeed * decelerationTime / 2) && destinationDepth - currentDepth > 1) || (destinationDepth - currentDepth > -(targetSpeed * decelerationTime / 2) && destinationDepth - currentDepth < -1))
+        if ((currentDepth - destinationDepth < (targetSpeed * decelerationTime / 2) && currentDepth - destinationDepth > 1) || (currentDepth - destinationDepth > -(targetSpeed * decelerationTime / 2) && currentDepth - destinationDepth < -1))
         {
             SetDecelerateAccelerate();
         }
@@ -217,16 +239,25 @@ public class MoveElevator : MonoBehaviour
             activePoints[i].transform.Translate(0f, -speed * Time.deltaTime, 0f);
             if (activePoints[i].transform.position.y <= endPosUp)
             {
+                if (activePoints[i] == activatedActivePoint)
+                {
+                    Debug.Log("ResetCalled");
+                    setParent.ResetLevelTransform();
+                    activatedActivePoint = null;
+                }
                 activePoints[i].transform.Translate(0f, 150f, 0f);
             }
         }
+
+        
         //update depth
         currentDepth -= speed * Time.deltaTime;
 
-        //stop sound when elevator stops
+        //stop sound when elevator stops and Set activePoint tether for next destination
         if (currentDepth < (destinationDepth + 1))
         {
             StopElevatorSound();
+            SetActivePoint();
         }
     }
 
@@ -245,6 +276,21 @@ public class MoveElevator : MonoBehaviour
     private void StopElevatorSound()
     {
         source.Stop();
+    }
+
+    private void SetActivePoint()
+    {
+        //Find the activePoint that is in the right place
+        for (int i = 0; i < activePoints.Count; i++)
+        {
+            if (activePoints[i].transform.position.y > -5f && activePoints[i].transform.position.y < 20f)
+            {
+                activatedActivePoint = activePoints[i];
+            }
+        }
+
+        //Call MoveLevelObjects.MoveWithShaft to SetParent
+        setParent.MoveWithShaft(activatedActivePoint);
     }
 
     public void DisablePanels()
