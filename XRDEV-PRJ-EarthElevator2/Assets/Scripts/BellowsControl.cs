@@ -22,7 +22,6 @@ public class BellowsControl : MonoBehaviour
     //    blendShapeCount = skinnedMesh.blendShapeCount;
     //}
 
-    // Update is called once per frame
     void Update()
     {
         blendRatio = Mathf.Clamp(leverAngle.leverValue * 100, 0, 100);

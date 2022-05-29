@@ -70,7 +70,6 @@ public class MoveElevator : MonoBehaviour
         elevatorMaxSpeed = 6f;
 
         //Disable informational canvases
-
         DisablePanels();
 
         //initialize activatedActivePanel
@@ -88,7 +87,6 @@ public class MoveElevator : MonoBehaviour
         {
             currentDepthShafts[i] = currentDepth - activePoints[i].position.y;
         }
-
             // Determine movement direction based on destination depth and current depth
             // if elevator is 'above' the target depth
             if (destinationDepth > (currentDepth + 1)) // + 1 added to stop it calling MoveElevatorDown() when it's just going to get held up by the next set of if statements
@@ -106,8 +104,6 @@ public class MoveElevator : MonoBehaviour
             MoveElevatorUp();
         }
 
-        
-
         //Set elevator max speed
         if (currentDepth < 100f)
         {
@@ -121,7 +117,6 @@ public class MoveElevator : MonoBehaviour
         //Set target speed
         leverValue = leverAngle.leverValue;
         targetSpeed = leverValue * elevatorMaxSpeed;
-        
 
     }
 
@@ -168,15 +163,12 @@ public class MoveElevator : MonoBehaviour
             {
                 if(activePoints[i] == activatedActivePoint) //Sets parent to reset to ShaftMovement just before segment flips. Potential issue if levels are closer together than total length of shaft (120)
                 {
-                    Debug.Log("ResetCalled"); 
                     setParent.ResetLevelTransform();
                     activatedActivePoint = null;
                 }
                 activePoints[i].transform.Translate(0f, -150f, 0f); //translate by a distance, not TO a point
             }
         }
-
-
         currentDepth += speed * Time.deltaTime;
 
         //stop sound when elevator stops and Set activePoint tether for next destination
@@ -184,17 +176,10 @@ public class MoveElevator : MonoBehaviour
         {
             StopElevatorSound();
             SetActivePoint();
-        }
-
-   
-        
+        }       
     }
 
-    
-
     public void MoveElevatorUp()
-
-    //FIX: won't go up!!! - may have fixed it...
     {
         //Activate correct shaft sections
 
@@ -214,8 +199,6 @@ public class MoveElevator : MonoBehaviour
             }
         }
 
- 
-
         //set elevator speed
 
         speed = targetSpeed; //initialize speed
@@ -224,13 +207,8 @@ public class MoveElevator : MonoBehaviour
             SetDecelerateAccelerate();
         }
         
-
-
         //play elevator sound when moving
         PlayElevatorSound();
-
-        //disable all active canvases when moving
-        //DisableCanvases();
 
         // move shaft segments (move parent transform, not segments)
 
@@ -241,15 +219,13 @@ public class MoveElevator : MonoBehaviour
             {
                 if (activePoints[i] == activatedActivePoint)
                 {
-                    Debug.Log("ResetCalled");
                     setParent.ResetLevelTransform();
                     activatedActivePoint = null;
                 }
                 activePoints[i].transform.Translate(0f, 150f, 0f);
             }
         }
-
-        
+                
         //update depth
         currentDepth -= speed * Time.deltaTime;
 

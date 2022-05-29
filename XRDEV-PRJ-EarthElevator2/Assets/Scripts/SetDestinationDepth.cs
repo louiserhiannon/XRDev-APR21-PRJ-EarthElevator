@@ -12,7 +12,6 @@ public class SetDestinationDepth : MonoBehaviour
     void Start()
     {
         animatedButton.OnButtonPressed += SetDepth;
-        
     }
 
  
